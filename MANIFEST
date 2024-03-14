@@ -4,3 +4,4 @@ setup.py
 holboxai/__init__.py
 holboxai/file1.py
 holboxai/file2.py
+holboxai/file3.py
