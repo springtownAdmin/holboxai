@@ -10,24 +10,25 @@ from llama_index.core import (
     StorageContext,
     load_index_from_storage,
 )
+from llama_index.readers.s3 import S3Reader
+
+    
 class QandA:
-    def ragLaama(st):
+    def ragLlama(bucketName):
         PERSIST_DIR = "./storage"
         if not os.path.exists(PERSIST_DIR):
-            documents = SimpleDirectoryReader("The Witcher documents").load_data()
-
-            documen = documents
+            loader = S3Reader(
+                bucket=bucketName,
+            )
+            documents = loader.load_data()
             index = VectorStoreIndex.from_documents(documents)
             index.storage_context.persist(persist_dir=PERSIST_DIR)
         else:
             storage_context = StorageContext.from_defaults(persist_dir=PERSIST_DIR)
             index = load_index_from_storage(storage_context)
-            
-        query_engine_witcher = index.as_query_engine()
-
-        if(st!=None):
-            response_witcher = query_engine_witcher.query(st)
-        else:
-            response_withcer = query_engine_witcher.query("Give a summary")
-
-        return response_witcher
+        return index
+        
+    def QueryEngine(index,prompt):
+        query_engine = index.as_query_engine()
+        response = query_engine.query(prompt)
+        return response
