@@ -42,6 +42,7 @@ class S3DocReader:
             return docs
         except Exception as e:
             # Return the exception if an error occurs during document retrieval
+            print(e)
             return e
         
 
