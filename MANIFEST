@@ -2,6 +2,11 @@
 setup.cfg
 setup.py
 holboxai/__init__.py
+holboxai/csv_query.py
+holboxai/docs_query.py
 holboxai/file1.py
 holboxai/file2.py
 holboxai/file3.py
+holboxai/relevant_docs.py
+holboxai/s3_reader.py
+holboxai/test1.py
