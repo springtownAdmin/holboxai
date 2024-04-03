@@ -49,9 +49,18 @@ To generate images based on your text prompts, use the text2image module. The ge
 from holboxai.text2image import text2image
 
 txt2img = text2image()
-prompt = "a sports car, on a racing track, 4K"
-txt2img.generate_image(prompt, 5, 25)
+prompt = "a sports car, on a racing track,4K" # Change the prompt according to requirement
+txt2img.generate_image(prompt, 5, 25) # example : cfg_scale = 5 , inference_steps = 25 
 ```
+
+cfg_scale = Guidance scale is a parameter that controls how much the image generation 
+            process follows the text prompt. The higher the value, the more the image
+            sticks to a given text input and vice-versa. It ranges from (1-20)
+             
+inference_steps = Inference steps controls how many steps will be taken during this process. 
+                  The higher the value, the more steps that are taken to produce the image.
+                  It ranges from (5-100) 
+
 ### 3. Generating Insights from CSV Files
 HolboxAI also allows you to generate visual insights from CSV files. First, import csv_reader from holboxai.informabot, then call read_csv_file() providing the file path as its argument. Lastly, to generate the answer, call get_answer() with your query as the argument.
 ```sh
