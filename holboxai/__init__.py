@@ -7,4 +7,5 @@ from holboxai.relevant_docs import RelevantDocs
 from holboxai.csv_query import CsvQuery
 from holboxai.text2image import text2image
 from holboxai.sentiment_analysis import SentimentAnalysis
+from holboxai.csv_query import CsvQuery
 
