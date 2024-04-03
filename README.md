@@ -49,8 +49,8 @@ To generate images based on your text prompts, use the text2image module. The ge
 from holboxai.text2image import text2image
 
 txt2img = text2image()
-prompt = "a sports car, on a racing track, 4K"
-txt2img.generate_image(prompt, 5, 25)
+prompt = "a sports car, on a racing track,4K" # Change the prompt according to requirement
+txt2img.generate_image(prompt, 5, 25) # example : cfg_scale = 5 , inference_steps = 25 
 ```
 
 cfg_scale = Guidance scale is a parameter that controls how much the image generation 
