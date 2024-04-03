@@ -5,3 +5,4 @@ from holboxai.s3_reader import S3DocReader
 from holboxai.docs_query import DocsQuery
 from holboxai.relevant_docs import RelevantDocs
 from holboxai.csv_query import CsvQuery
+from holboxai.text2image import text2image
