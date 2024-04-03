@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'holboxai',         # How you named your package folder (MyLib)
   packages = ['holboxai'],   # Chose the same as "name"
-  version = '0.4',      # Start with a small number and increase it with every change you make
+  version = '0.5',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'HolboxAI package',   # Give a short description about your library
   long_description = 'Welcome to HolboxAI, a comprehensive AI package designed to enhance your data processing and creative capabilities. HolboxAI offers a range of functionalities including text-to-image generation, running textual queries on documents stored in your S3 bucket, and generating insights from natural language queries.',
