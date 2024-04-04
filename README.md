@@ -82,5 +82,14 @@ sa = hb.SentimentAnalysis()
 response = sa.get_bedrock_sentiment("<text>")
 print(response)
 ```
+### 5 Getting Summary of the documents from S3 bucket 
+This feature will summarize the selected document from the s3 bucket for user.
+```sh
+reader = hb.S3DocReader()
+docs = reader.get_docs(bucket_name="<Bucket Name>",key = "<File Name>")
+doc_summary = hb.Summarizer()
+summary = doc_summary.summarize(docs)
+print(summary)
+```
 ## Conclusion
 HolboxAI is designed to simplify complex AI functionalities and make them accessible for various applications. Whether you're querying documents, generating creative images, or seeking insights from data, HolboxAI provides the tools you need. Enjoy exploring the capabilities of HolboxAI in your projects!
