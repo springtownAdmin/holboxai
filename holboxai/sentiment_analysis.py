@@ -38,6 +38,15 @@ sentence: The tea is not good.
 response: negative
 """
 
+claude_template="""
+I need one word sentiment of the sentence which
+is between the <data> XML like tags.
+The sentiment might be positive, negative or neutral.
+
+<data>
+{{ content }}
+</data>
+"""
 
 class SentimentAnalysis:
     
@@ -53,7 +62,7 @@ class SentimentAnalysis:
         
         get_openai_sentiment(self, text:str, llm_key):
             Args: 
-                text:prvided text or sentence
+                text:provided text or sentence
                 llm_key: openai api key 
             returns: 
                 Returns whether the text is negative or positive.
@@ -62,7 +71,7 @@ class SentimentAnalysis:
             Args: 
                 text:prvided text or sentence
                 model:
-                    The supported models are amazon titan and in default it uses cohere.
+                    The supported models are "amazon.titan-text-express-v1" and "anthropic.claude-3-sonnet-20240229-v1:0", and in default it uses cohere.command-text-v14.
                     If you don't provide any model, the default it use is cohere.
             returns: 
                 Negative, positive or neutral sentiment.
@@ -109,7 +118,7 @@ class SentimentAnalysis:
             Args: 
                 text:prvided text or sentence
                 model:
-                    The supported models are amazon titan and in default it uses cohere.command-text-v14.
+                    The supported models are "amazon.titan-text-express-v1" and "anthropic.claude-3-sonnet-20240229-v1:0", and in default it uses cohere.command-text-v14.
                     If you don't provide any model, the default it use is cohere.
             returns: 
                 Negative, positive or neutral sentiment.
@@ -160,7 +169,36 @@ class SentimentAnalysis:
                 response = self.bedrock_runtime.invoke_model(**kwargs)
                 response_body = json.loads(response.get('body').read())
                 generation = response_body['results'][0]['outputText']
-                return generation   
+                return generation
+            
+            if model == "anthropic.claude-3-sonnet-20240229-v1:0":
+                template = Template(cohere_template)
+                prompt = template.render(content=text)
+                kwargs = {
+                    "modelId": "anthropic.claude-3-sonnet-20240229-v1:0",
+                    "contentType": "application/json",
+                    "accept": "application/json",
+                    "body": json.dumps(
+                        {
+                        "anthropic_version": "bedrock-2023-05-31",
+                        "max_tokens": 200, 
+                        "messages": [
+                            {
+                                "role": "user",
+                                "content": [
+                                    {
+                                        "type": "text",
+                                        "text": prompt
+                                    }
+                                ]
+                            }
+                        ]
+                        }
+                    )    
+                }
+                response = self.bedrock_runtime.invoke_model(**kwargs)
+                response_body = json.loads(response.get('body').read())
+                return response_body['content'][0]['text']
         
         except Exception as e:
             print(e)
@@ -168,3 +206,7 @@ class SentimentAnalysis:
 
             
             
+a = SentimentAnalysis()
+print(a.get_sentiment("I am very happy to hear that good news but this will not last long."))
+print(a.get_sentiment("I am very happy to hear that good news but this will not last long.", "amazon.titan-text-express-v1"))
+print(a.get_sentiment("I am very happy to hear that good news but this will not last long.", "anthropic.claude-3-sonnet-20240229-v1:0"))

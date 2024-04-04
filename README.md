@@ -86,7 +86,7 @@ print(response)
 ```
 
 2. AWS Bedrock
-For Useing AWS Bedrock, we provide two model. One is amazon.titan-text-express-v1 and the Default which we use is cohere.command-text-v14.
+For Useing AWS Bedrock, we provide three models. One is amazon.titan-text-express-v1, other is "anthropic.claude-3-sonnet-20240229-v1:0" and the Default which we use is cohere.command-text-v14.
 For using our default model. Call the function get_sentiment and pass text/sentence as an argument.
 ```sh
 import holboxai as hb
@@ -94,12 +94,27 @@ sa = hb.SentimentAnalysis()
 response = sa.get_sentiment("<text>")
 print(response)
 ```
-For using amazon.titan-text-express-v1 model. Call the function get_sentiment and pass text/sentence and model name to be "amazon.titan-text-express-v1" as an argument.
+For using amazon.titan-text-express-v1 model or "anthropic.claude-3-sonnet-20240229-v1:0". Call the function get_sentiment and pass text/sentence and model name to be "amazon.titan-text-express-v1" or "anthropic.claude-3-sonnet-20240229-v1:0" as an argument.
 ```sh
 import holboxai as hb
 sa = hb.SentimentAnalysis()
-response = sa.get_sentiment("<text>", "amazon.titan-text-express-v1")
+response = sa.get_sentiment("<text>", "anthropic.claude-3-sonnet-20240229-v1:0")
 print(response)
 ```
+### 4. Getting name and entity from a text/sentence
+To get names and entity from any text, import NameEntityRecognition from holboxai.name_entity_recognition. After that call function get_entity and pass your text and model name as parameter. If no model is given in parameter then it uses "cohere.command-text-v14". Other models which can we used are : "amazon.titan-text-express-v1" and "anthropic.claude-3-sonnet-20240229-v1:0". For best results use "anthropic.claude-3-sonnet-20240229-v1:0".
+```sh
+import holboxai as hb
+ner = hb.NameEntityRecognition()
+response = ner.get_entity("<text>")
+print(response)
+```
+```sh
+import holboxai as hb
+ner = hb.NameEntityRecognition()
+response = ner.get_entity("<text>", "anthropic.claude-3-sonnet-20240229-v1:0")
+print(response)
+```
+
 ## Conclusion
 HolboxAI is designed to simplify complex AI functionalities and make them accessible for various applications. Whether you're querying documents, generating creative images, or seeking insights from data, HolboxAI provides the tools you need. Enjoy exploring the capabilities of HolboxAI in your projects!
