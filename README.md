@@ -31,7 +31,7 @@ Next, import the DocsQuery class. Use createindexes() to index the documents and
 from holboxai.docs_query import DocsQuery
 
 docsQuery = DocsQuery()
-indexes = docsQuery.createindexes(documents)
+indexes = docsQuery.create_index(documents)
 query = " "  # Your query here
 response = docsQuery.query(indexes, query)
 ```
@@ -41,7 +41,7 @@ To validate the sources that generated the response of your query, import Releva
 from holboxai.relevant_docs import RelevantDocs
 
 rel_docs = RelevantDocs()
-list_of_rel_docs = rel_docs.get_docs(query, num=4, indexes)
+list_of_rel_docs = rel_docs.get_docs(query, n_docs=4, retriever)
 ```
 ### 2. Generating Images from Text Prompts
 To generate images based on your text prompts, use the text2image module. The generate_image() method's arguments include your desired prompt, guidance scale, and inference steps.
