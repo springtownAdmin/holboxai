@@ -3,7 +3,11 @@ import json
 import boto3
 import openai
 
-prompt_template="""
+'''
+prompt template for titam model.
+'''
+
+titan_template="""
 I need one word sentiment of the sentence which
 is between the <data> XML like tags.
 The sentiment might be positive, negative or neutral.
@@ -11,6 +15,27 @@ The sentiment might be positive, negative or neutral.
 <data>
 {{ content }}
 </data>
+"""
+
+'''
+prompt template for cohere model.
+'''
+cohere_template = """
+Analysis the sentiment of the sentence which
+is between the <data> XML like tags.
+give one word output. Choose from positive, negative or neutral.
+
+<data>
+{{ content }}
+</data>
+
+
+Consider the following examples:
+sentence: The food is testy:
+response: positive
+
+sentence: The tea is not good.
+response: negative
 """
 
 
@@ -24,8 +49,7 @@ class SentimentAnalysis:
     
     Methods:
         __init__(self):
-        This set the model id for the bedrock to amazon.titan-text-express-v1
-        and also initalized the bedrock runtime environment.
+        This initalized the bedrock runtime environment.
         
         get_openai_sentiment(self, text:str, llm_key):
             Args: 
@@ -34,16 +58,18 @@ class SentimentAnalysis:
             returns: 
                 Returns whether the text is negative or positive.
        
-        get_bedrock_sentiment(self, text:str):
+        get_sentiment(self, text:str, model:str=None):
             Args: 
                 text:prvided text or sentence
+                model:
+                    The supported models are amazon titan and in default it uses cohere.
+                    If you don't provide any model, the default it use is cohere.
             returns: 
                 Negative, positive or neutral sentiment.
     """
     
     def __init__(self):
         try:
-            self.model_id = "amazon.titan-text-express-v1"
             self.bedrock_runtime = boto3.client("bedrock-runtime")
         
         except Exception as e:
@@ -76,40 +102,69 @@ class SentimentAnalysis:
         except Exception as e:
             print(e)
     
-    def get_bedrock_sentiment(self, text:str):
+    def get_sentiment(self, text:str, model:str=None):
         '''
         Function for getting sentiment using amazon bedrock
-        get_bedrock_sentiment(self, text:str):
+        get_sentiment(self, text:str, model:str=None):
             Args: 
                 text:prvided text or sentence
+                model:
+                    The supported models are amazon titan and in default it uses cohere.command-text-v14.
+                    If you don't provide any model, the default it use is cohere.
             returns: 
                 Negative, positive or neutral sentiment.
         '''
         try:
-            template = Template(prompt_template)
-            prompt = template.render(content=text)
-
-            kwargs = {
-                "modelId": self.model_id,
-                "contentType": "application/json",
-                "accept": "*/*",
-                "body": json.dumps(
-                    {
-                        "inputText": prompt,
-                        "textGenerationConfig": {
-                            "maxTokenCount": 512,
-                            "temperature": 0,
-                            "topP": 0.9
+            if model == None:
+                template = Template(cohere_template)
+                prompt = template.render(content=text)
+                
+                kwargs = {
+                    "modelId": "cohere.command-text-v14",
+                    "contentType": "application/json",
+                    "accept": "application/json",
+                    "body":json.dumps(
+                        {
+                            "prompt": prompt,
+                            "max_tokens": 15, 
+                            "temperature": 0.5, 
+                            "p":0.9
                         }
-                    }
-                )
-            }
+                    )
+                }
+                
+                response = self.bedrock_runtime.invoke_model(**kwargs)
+                response_body = json.loads(response.get('body').read())
+                return response_body['generations'][0]['text']
+            
+            
+            if model == "amazon.titan-text-express-v1":
+                template = Template(titan_template)
+                prompt = template.render(content=text)
+                kwargs = {
+                    "modelId": "amazon.titan-text-express-v1",
+                    "contentType": "application/json",
+                    "accept": "*/*",
+                    "body": json.dumps(
+                        {
+                            "inputText": prompt,
+                            "textGenerationConfig": {
+                                "maxTokenCount": 512,
+                                "temperature": 0,
+                                "topP": 0.9
+                            }
+                        }
+                    )
+                }
 
-            response = self.bedrock_runtime.invoke_model(**kwargs)
-            response_body = json.loads(response.get('body').read())
-            generation = response_body['results'][0]['outputText']
-            return generation
+                response = self.bedrock_runtime.invoke_model(**kwargs)
+                response_body = json.loads(response.get('body').read())
+                generation = response_body['results'][0]['outputText']
+                return generation   
         
         except Exception as e:
             print(e)
 
+
+            
+            
