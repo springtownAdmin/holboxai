@@ -1,5 +1,6 @@
 import boto3
 from langchain_community.document_loaders import S3DirectoryLoader
+from langchain_community.document_loaders import S3FileLoader
 
 class S3DocReader:
     """
@@ -22,9 +23,9 @@ class S3DocReader:
             session = boto3.Session()
         except Exception as e:
             # Print the exception if the session initialization fails
-            print(e)
+            print("Please configure your AWS CLI with valid credentials")
     
-    def get_bucket(self, bucket_name: str):
+    def get_docs(self, bucket_name: str):
         """
         Retrieves documents from the specified S3 bucket.
 
@@ -44,6 +45,16 @@ class S3DocReader:
             # Return the exception if an error occurs during document retrieval
             print(e)
             return e
+        
+    
+    def get_file(self,bucket_name,file_name):
+        try:
+            loader = S3FileLoader(bucket_name ,file_name)
+            doc_file = loader.load()
+            return doc_file
+    
+        except Exception as e :
+            return e 
         
 
         

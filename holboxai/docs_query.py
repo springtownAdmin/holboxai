@@ -40,7 +40,7 @@ class DocsQuery:
         # Initialize the embeddings model from Bedrock
         self.embeddings = BedrockEmbeddings(model_id="amazon.titan-embed-text-v1")
         # Initialize the language model from Brdrock
-        self.llm = Bedrock(model_id="mistral.mixtral-8x7b-instruct-v0:1")
+        self.llm = Bedrock(model_id="mistral.mistral-large-2402-v1:0")
         
     def create_index(self, docs):
         """
