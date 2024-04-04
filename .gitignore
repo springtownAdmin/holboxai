@@ -1,6 +1,6 @@
 holbox_env
 main.py
-.gitignore
+gitignore
 __pycache__ 
 v7 
 test.py
