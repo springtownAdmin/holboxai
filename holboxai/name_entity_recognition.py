@@ -69,12 +69,11 @@ Given the following text, which is enclosed within <data> XML-like tags, extract
 
 Instructions:
 1. Carefully examine the provided text within the <data> tags.
-2. Identify any mentions of names or places within the text.
-3. Extract the name of a person and a place from the content.
-4. Provide the extracted names.
-5. If there are multiple persons or places mentioned, provide all of them.
-6. Take note of any variations or synonyms for names and places.
-7. make two list one for person name and other for place name
+2. Extract the name of a person and a place from the content.
+3. Provide the extracted names.
+4. If there are multiple persons or places mentioned, provide all of them.
+5. Take note of any variations or synonyms for names and places.
+6. make two list one for person name and other for place name
 
 Example Text:
 "The Smith family moved to San Francisco last year."

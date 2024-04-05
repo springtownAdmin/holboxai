@@ -39,13 +39,9 @@ response: negative
 """
 
 claude_template="""
-I need one word sentiment of the sentence which
-is between the <data> XML like tags.
-The sentiment might be positive, negative or neutral.
-
-<data>
+I need a one word sentiment of the sentence that i provide below.
+Choose sentimnet from positive, negative or neutral.
 {{ content }}
-</data>
 """
 
 class SentimentAnalysis:
@@ -172,7 +168,7 @@ class SentimentAnalysis:
                 return generation
             
             if model == "anthropic.claude-3-sonnet-20240229-v1:0":
-                template = Template(cohere_template)
+                template = Template(claude_template)
                 prompt = template.render(content=text)
                 kwargs = {
                     "modelId": "anthropic.claude-3-sonnet-20240229-v1:0",
@@ -204,9 +200,3 @@ class SentimentAnalysis:
             print(e)
 
 
-            
-            
-a = SentimentAnalysis()
-print(a.get_sentiment("I am very happy to hear that good news but this will not last long."))
-print(a.get_sentiment("I am very happy to hear that good news but this will not last long.", "amazon.titan-text-express-v1"))
-print(a.get_sentiment("I am very happy to hear that good news but this will not last long.", "anthropic.claude-3-sonnet-20240229-v1:0"))
