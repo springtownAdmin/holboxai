@@ -15,7 +15,7 @@ After installation, you can import HolboxAI into your project using:
 import holbox as hb
 ```
 ## Features
-### 1. RAG Functionality
+###  RAG Functionality
 To run textual queries on your S3 bucket documents, follow these steps:
 Load Documents from S3 Bucket:
 First, import the S3DocReader class and initialize it. Then, call the get_bucket() method and provide the name of your S3 bucket as its argument.
@@ -37,7 +37,7 @@ To validate the sources that generated the response of your query, import Releva
 rel_docs = hb.RelevantDocs()
 docs = rel_docs.get_docs(query, n_docs=4, retriever)
 ```
-### 2. Generating Images from Text Prompts
+### Generating Images from Text Prompts
 To generate images based on your text prompts, use the text2image module. The generate_image() method's arguments include your desired prompt, guidance scale, and inference steps.
 ```sh
 txt2img = hb.text2image()
@@ -53,7 +53,7 @@ inference_steps = Inference steps controls how many steps will be taken during t
                   The higher the value, the more steps that are taken to produce the image.
                   It ranges from (5-100) 
 
-### 3. Generating Insights from CSV Files
+### Generating Insights from CSV Files
 HolboxAI also allows you to generate visual insights from CSV files. First, import csv_reader from holboxai.informabot, then call read_csv_file() providing the file path as its argument. Lastly, to generate the answer, call get_answer() with your query as the argument.
 ```sh
 import pandas as pd
@@ -64,6 +64,14 @@ df = pd.read_csv("<path>")
 response = informabot.single_csv_query(df , query)
 print(response)
 ```
-
+### Getting Summary of the documents from S3 bucket
+This feature will summarize the selected document from the s3 bucket for user.
+```sh
+reader = hb.S3DocReader()
+docs = reader.get_file(bucket_name="<Bucket Name>",key = "<File Name>")
+doc_summary = hb.Summarizer()
+summary = doc_summary.summarize(docs)
+print(summary)
+```
 ## Conclusion
 HolboxAI is designed to simplify complex AI functionalities and make them accessible for various applications. Whether you're querying documents, generating creative images, or seeking insights from data, HolboxAI provides the tools you need. Enjoy exploring the capabilities of HolboxAI in your projects!

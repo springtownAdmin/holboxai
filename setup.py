@@ -1,4 +1,9 @@
 from distutils.core import setup
+
+def read_requirements():
+    with open('requirements.txt') as req:
+        return req.read().splitlines()
+
 setup(
   name = 'holboxai',         # How you named your package folder (MyLib)
   packages = ['holboxai'],   # Chose the same as "name"
@@ -11,16 +16,7 @@ setup(
   url = 'https://github.com/springtownAdmin/holboxai',   # Provide either the link to your github or to your website
   download_url = 'https://github.com/springtownAdmin/holboxai/archive/refs/tags/v_08.tar.gz',    # I explain this later on
   keywords = ['GenAI', 'Custom', 'holbox'],   # Keywords that define your package best
-  install_requires=[          
-          'diffusers',
-          'flask',
-          'boto3',
-          'langchain',
-          'langchain_community',
-          'unstructured[pdf]',
-          'unstructured[docx]',
-          'pandasai',
-      ],
+  install_requires=read_requirements(),
   classifiers=[
     'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
     'Intended Audience :: Developers',      # Define that your audience are developers
