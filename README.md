@@ -31,7 +31,7 @@ Next, import the DocsQuery class. Use createindexes() to index the documents and
 from holboxai.docs_query import DocsQuery
 
 docsQuery = DocsQuery()
-indexes = docsQuery.createindexes(documents)
+indexes = docsQuery.create_index(documents)
 query = " "  # Your query here
 response = docsQuery.query(indexes, query)
 ```
@@ -41,7 +41,7 @@ To validate the sources that generated the response of your query, import Releva
 from holboxai.relevant_docs import RelevantDocs
 
 rel_docs = RelevantDocs()
-list_of_rel_docs = rel_docs.get_docs(query, num=4, indexes)
+list_of_rel_docs = rel_docs.get_docs(query, n_docs=4, retriever)
 ```
 ### 2. Generating Images from Text Prompts
 To generate images based on your text prompts, use the text2image module. The generate_image() method's arguments include your desired prompt, guidance scale, and inference steps.
@@ -74,24 +74,47 @@ response = informabot.single_csv_query(df , query)
 print(response)
 ```
 ### 4. Getting Sentiment of a text/sentence
-To get sentiment of the any text or sentence, import SentimentAnalysis from holboxai.sentiment_analysis. After that we provide two options : 1. OpenAI and 2. AWS Bedrock
+To get sentiment of any text or sentence, import SentimentAnalysis from holboxai.sentiment_analysis. After that we provide two options : 1. OpenAI and 2. AWS Bedrock
 
 1. OpenAI
 You need openai api key in order to use this functionality. Once you have that, call get_openai_sentimet() function and pass arguments like your text/sentence and your openai api key.
 ```sh
-import holbox as hb
+import holboxai as hb
 sa = hb.SentimentAnalysis()
 response = sa.get_openai_sentiment("<Your text>", "<Your openai APi>")
 print(response)
 ```
 
 2. AWS Bedrock
-By default model will use amazon.titan-text-express-v1 from amazon bedrock. Call the function get_bedrock_sentiment and pass text/sentence as an argument.
+For Useing AWS Bedrock, we provide three models. One is amazon.titan-text-express-v1, other is "anthropic.claude-3-sonnet-20240229-v1:0" and the Default which we use is cohere.command-text-v14.
+For using our default model. Call the function get_sentiment and pass text/sentence as an argument.
 ```sh
-import holbox as hb
+import holboxai as hb
 sa = hb.SentimentAnalysis()
-response = sa.get_bedrock_sentiment("<text>")
+response = sa.get_sentiment("<text>")
 print(response)
 ```
+For using amazon.titan-text-express-v1 model or "anthropic.claude-3-sonnet-20240229-v1:0". Call the function get_sentiment and pass text/sentence and model name to be "amazon.titan-text-express-v1" or "anthropic.claude-3-sonnet-20240229-v1:0" as an argument.
+```sh
+import holboxai as hb
+sa = hb.SentimentAnalysis()
+response = sa.get_sentiment("<text>", "anthropic.claude-3-sonnet-20240229-v1:0")
+print(response)
+```
+### 4. Getting name and entity from a text/sentence
+To get names and entity from any text, import NameEntityRecognition from holboxai.name_entity_recognition. After that call function get_entity and pass your text and model name as parameter. If no model is given in parameter then it uses "cohere.command-text-v14". Other models which can we used are : "amazon.titan-text-express-v1" and "anthropic.claude-3-sonnet-20240229-v1:0". For best results use "anthropic.claude-3-sonnet-20240229-v1:0".
+```sh
+import holboxai as hb
+ner = hb.NameEntityRecognition()
+response = ner.get_entity("<text>")
+print(response)
+```
+```sh
+import holboxai as hb
+ner = hb.NameEntityRecognition()
+response = ner.get_entity("<text>", "anthropic.claude-3-sonnet-20240229-v1:0")
+print(response)
+```
+
 ## Conclusion
 HolboxAI is designed to simplify complex AI functionalities and make them accessible for various applications. Whether you're querying documents, generating creative images, or seeking insights from data, HolboxAI provides the tools you need. Enjoy exploring the capabilities of HolboxAI in your projects!
