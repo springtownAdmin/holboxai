@@ -65,7 +65,7 @@ response = informabot.single_csv_query(df , query)
 print(response)
 ```
 ### 4. Getting Sentiment of a text/sentence
-To get sentiment of the any text or sentence, import SentimentAnalysis from holboxai.sentiment_analysis. After that we provide two options : 1. OpenAI and 2. AWS Bedrock
+To get sentiment of any text or sentence, import SentimentAnalysis from holboxai.sentiment_analysis. After that we provide two options : 1. OpenAI and 2. AWS Bedrock
 
 1. OpenAI
 You need openai api key in order to use this functionality. Once you have that, call get_openai_sentimet() function and pass arguments like your text/sentence and your openai api key.
@@ -76,20 +76,9 @@ print(response)
 ```
 
 2. AWS Bedrock
-By default model will use amazon.titan-text-express-v1 from amazon bedrock. Call the function get_bedrock_sentiment and pass text/sentence as an argument.
+For Useing AWS Bedrock, we provide three models. One is amazon.titan-text-express-v1, other is "anthropic.claude-3-sonnet-20240229-v1:0" and the Default which we use is cohere.command-text-v14.
+For using our default model. Call the function get_sentiment and pass text/sentence as an argument.
 ```sh
-sa = hb.SentimentAnalysis()
-response = sa.get_bedrock_sentiment("<text>")
-print(response)
-```
-### 5 Getting Summary of the documents from S3 bucket 
-This feature will summarize the selected document from the s3 bucket for user.
-```sh
-reader = hb.S3DocReader()
-docs = reader.get_docs(bucket_name="<Bucket Name>",key = "<File Name>")
-doc_summary = hb.Summarizer()
-summary = doc_summary.summarize(docs)
-print(summary)
-```
+
 ## Conclusion
 HolboxAI is designed to simplify complex AI functionalities and make them accessible for various applications. Whether you're querying documents, generating creative images, or seeking insights from data, HolboxAI provides the tools you need. Enjoy exploring the capabilities of HolboxAI in your projects!
