@@ -1,6 +1,6 @@
-boto3,
-langchain,
-langchain_community,
+boto3
+langchain
+langchain_community
 unstructured[pdf]
 unstructured[docx]
 pandasai
