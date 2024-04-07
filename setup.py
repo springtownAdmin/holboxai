@@ -13,7 +13,7 @@ setup(
   version = '0.8',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'HolboxAI package',   # Give a short description about your library
-  long_description=readme,
+  long_description="Welcome to HolboxAI, a comprehensive AI package designed to enhance your data processing and creative capabilities. HolboxAI offers a range of functionalities including text-to-image generation, running textual queries on documents stored in your S3 bucket, and generating insights from natural language queries. This README provides a detailed guide on how to install and use the various features of HolboxAI.",
   long_description_content_type='text/markdown',
   author = 'Sahil Khatri',                   # Type in your name
   author_email = 'sahil.khatri@holbox.ai',      # Type in your E-Mail
