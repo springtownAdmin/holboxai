@@ -168,7 +168,7 @@ class NameEntityRecognition:
                 return response_body['generations'][0]['text']
                 
                 
-            if model == "amazon.titan-text-express-v1":
+            if model == "Amazon Titan":
                 template = Template(titan_template)
                 prompt = template.render(content=text)
                 kwargs = {
@@ -192,7 +192,7 @@ class NameEntityRecognition:
                 generation = response_body['results'][0]['outputText']
                 return generation
             
-            if model == "anthropic.claude-3-sonnet-20240229-v1:0":
+            if model == "Anthropic Claude":
                 template = Template(claude_template)
                 prompt = template.render(content=text)
                 kwargs = {
