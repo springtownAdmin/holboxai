@@ -97,7 +97,7 @@ summary = doc_summary.summarize(docs)
 print(summary)
 ```
 
-###  Getting Sentiment of a text/sentence
+### 5. Getting Sentiment of a text/sentence
 This feature will help user to get the sentiment of the text/sentence
 (Positive/Negative).
 
@@ -117,7 +117,7 @@ sa = hb.SentimentAnalysis()
 response = sa.get_sentiment( text="<text>", model="Amazon Titan")
 print(response)
 ```
-### 4. Getting name and entity from a text/sentence
+### 6. Getting name and entity from a text/sentence
 This feature will help user to extract important keywords (Name,place) from the given sentence.
 
 Supported Foundation models
