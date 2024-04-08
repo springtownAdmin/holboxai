@@ -139,7 +139,8 @@ print(response)
 ```
 ### 7. Meeting Summarizer
 This feature will allow user to get things like sentiment, sentiment score, Action Items, summary of each topic discussed and the total time, each individual had spoken in the meeting.
-Supported File Format: vtt and txt
+Supported File Format: vtt and txt.
+The structure of the content inside the file must be mantained, refer demo meeting_summary.txt file in demoFiles folder. 
 ```sh
 ms = MeetingSummarizer()
 response = ms.get_meeting_summary("<bucket_name>", "<file_name>")
