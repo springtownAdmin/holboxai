@@ -9,3 +9,4 @@ from holboxai.text2image import text2image
 from holboxai.sentiment_analysis import SentimentAnalysis
 from holboxai.name_entity_recognition import NameEntityRecognition
 from holboxai.summarizer import Summarizer
+from holboxai.meeting_summarizer import MeetingSummarizer
