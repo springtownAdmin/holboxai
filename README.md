@@ -10,7 +10,7 @@ pip install holboxai
 
 After installation, you can import HolboxAI into your project using:
 ```sh
-import holbox as hb
+import holboxai as hb
 ```
 ## Features
 ### 1. RAG 
