@@ -17,7 +17,7 @@ setup(
   author = 'Sahil Khatri',                   # Typein your name
   author_email = 'sahil.khatri@holbox.ai',      # Type in your E-Mail
   url = 'https://github.com/springtownAdmin/holboxai',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/springtownAdmin/holboxai/archive/refs/tags/v_11.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/springtownAdmin/holboxai/archive/refs/tags/v_12.tar.gz',    # I explain this later on
   keywords = ['GenAI', 'Custom', 'holbox'],   # Keywords that define your package best
   install_requires=required,
   classifiers=[
