@@ -11,3 +11,4 @@ holboxai/sentiment_analysis.py
 holboxai/summarizer.py
 holboxai/test1.py
 holboxai/text2image.py
+requirements.txt

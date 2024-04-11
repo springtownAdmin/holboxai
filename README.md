@@ -10,7 +10,7 @@ pip install holboxai
 
 After installation, you can import HolboxAI into your project using:
 ```sh
-import holbox as hb
+import holboxai as hb
 ```
 ## Features
 ### 1. RAG 
@@ -137,6 +137,14 @@ ner = hb.NameEntityRecognition()
 response = ner.get_entity(text="<text>", model = "Anthropic Claude")
 print(response)
 ```
-
+### 7. Meeting Summarizer
+This feature will allow user to get things like sentiment, sentiment score, Action Items, summary of each topic discussed and the total time, each individual had spoken in the meeting.
+Supported File Format: vtt and txt.
+The structure of the content inside the file must be mantained, refer demo meeting_summary.txt file in demoFiles folder. 
+```sh
+ms = MeetingSummarizer()
+response = ms.get_meeting_summary("<bucket_name>", "<file_name>")
+print(response)
+```
 ## Conclusion
 HolboxAI is designed to simplify complex AI functionalities and make them accessible for various applications. Whether you're querying documents, generating creative images, or seeking insights from data, HolboxAI provides the tools you need. Enjoy exploring the capabilities of HolboxAI in your projects!

@@ -1,0 +1,1642 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.790
+<v Jesus Rujas>OK, I think it's recording.</v>
+
+00:00:01.900 --> 00:00:02.020
+<v Jesus Rujas>Yeah.</v>
+
+00:00:04.100 --> 00:00:05.990
+<v Jesus Rujas>OK, so I think we can start.</v>
+
+00:00:08.620 --> 00:00:08.970
+<v Jesus Rujas>OK.</v>
+
+00:00:08.980 --> 00:00:10.670
+<v Jesus Rujas>So Marcos, can you start please?</v>
+
+00:00:13.150 --> 00:00:15.140
+<v Marcos Alonso>Yeah, OK.</v>
+
+00:00:15.150 --> 00:00:54.030
+<v Marcos Alonso>Yesterday I continued with the gradio interface and I was able to integrate the last changes done by Peter in the in the summarization meetings use case and I also create this a Adami generating email stuff and chat about, but well, let's align today in order to check how to provide the functionality to this mockup, but the UI is there and yeah, also we can establish what I look and feel.</v>
+
+00:00:54.040 --> 00:00:55.120
+<v Marcos Alonso>Do we want alright?</v>
+
+00:00:56.400 --> 00:00:58.490
+<v Marcos Alonso>I guess the the new one, right?</v>
+
+00:00:58.500 --> 00:01:01.040
+<v Marcos Alonso>The NIQ brands look and feel.</v>
+
+00:01:02.670 --> 00:01:04.040
+<v Andrew J>Yeah, we should go with that.</v>
+
+00:01:04.190 --> 00:01:04.400
+<v Marcos Alonso>Hmm.</v>
+
+00:01:04.050 --> 00:01:05.060
+<v Andrew J>Look and feel, yeah.</v>
+
+00:01:06.990 --> 00:01:07.320
+<v Andrew J>Umm.</v>
+
+00:01:06.980 --> 00:01:07.790
+<v Marcos Alonso>Is there any?</v>
+
+00:01:08.120 --> 00:01:15.370
+<v Marcos Alonso>Is there any document with assets or something like that HH images and colors?</v>
+
+00:01:13.120 --> 00:01:16.760
+<v Andrew J>The yes, yes, there is.</v>
+
+00:01:16.870 --> 00:01:20.100
+<v Andrew J>It's but I'm folder I think.</v>
+
+00:01:20.100 --> 00:01:21.040
+<v Marcos Alonso>Yeah, I did it.</v>
+
+00:01:20.300 --> 00:01:22.590
+<v Andrew J>Let me let me share the link with you.</v>
+
+00:01:28.690 --> 00:01:32.110
+<v Andrew J>Yeah, we can discuss the details in the meeting that we are going to have later.</v>
+
+00:01:35.890 --> 00:01:42.500
+<v Andrew J>Yeah, this is the I'm going to type here in the chat basically in this.</v>
+
+00:01:45.260 --> 00:01:46.290
+<v Andrew J>In this page.</v>
+
+00:01:46.400 --> 00:01:49.680
+<v Andrew J>Uh usually be able to find the different assets, assets.</v>
+
+00:01:50.850 --> 00:01:51.050
+<v Marcos Alonso>OK.</v>
+
+00:01:50.730 --> 00:01:51.080
+<v Andrew J>OK.</v>
+
+00:01:51.650 --> 00:01:53.360
+<v Andrew J>So yeah, please take a look.</v>
+
+00:01:53.570 --> 00:01:58.540
+<v Andrew J>But while basically no the what I'm looking for is the new logo, right?</v>
+
+00:01:58.550 --> 00:02:00.420
+<v Andrew J>The new colors something like that.</v>
+
+00:02:00.430 --> 00:02:06.690
+<v Andrew J>So I mean, well, yeah, please take a look and maybe you can find something useful there.</v>
+
+00:02:07.890 --> 00:02:08.210
+<v Marcos Alonso>OK.</v>
+
+00:02:09.830 --> 00:02:10.010
+<v Andrew J>OK.</v>
+
+00:02:10.020 --> 00:02:11.580
+<v Andrew J>So that's good then. Perfect.</v>
+
+00:02:11.660 --> 00:02:14.380
+<v Andrew J>So then let's let's see what you already have.</v>
+
+00:02:19.390 --> 00:02:19.680
+<v Marcos Alonso>Umm.</v>
+
+00:02:15.100 --> 00:02:31.740
+<v Andrew J>Uh, in the in the today's meeting and as we discuss the very beginning of this week and maybe we can go also with that kind of demo and then we can align about our current status.</v>
+
+00:02:31.910 --> 00:02:32.270
+<v Andrew J>OK.</v>
+
+00:02:32.280 --> 00:02:33.670
+<v Andrew J>So that that that's fine good.</v>
+
+00:02:33.890 --> 00:02:34.360
+<v Marcos Alonso>OK.</v>
+
+00:02:35.090 --> 00:02:35.380
+<v Marcos Alonso>Yeah.</v>
+
+00:02:35.390 --> 00:02:43.090
+<v Marcos Alonso>What is pending is to define how we are going to to deploy this and well, maybe when you stay Dev OPS team help.</v>
+
+00:02:44.830 --> 00:02:46.420
+<v Andrew J>Yeah, that's yeah.</v>
+
+00:02:49.680 --> 00:02:49.900
+<v Marcos Alonso>Hmm.</v>
+
+00:02:46.430 --> 00:02:52.980
+<v Andrew J>We have highly discussion with the rajabalaji about that and if we need this, they'll help.</v>
+
+00:02:53.110 --> 00:02:56.470
+<v Andrew J>They will be helping us, for sure.</v>
+
+00:02:57.440 --> 00:02:58.450
+<v Andrew J>Yeah, but.</v>
+
+00:03:02.680 --> 00:03:02.950
+<v Marcos Alonso>Umm.</v>
+
+00:02:58.460 --> 00:03:06.000
+<v Andrew J>Well, let's see, because at the end of the day, we can do by ourselves this activity that will be much better. OK?</v>
+
+00:03:06.660 --> 00:03:06.960
+<v Marcos Alonso>OK.</v>
+
+00:03:06.410 --> 00:03:10.140
+<v Andrew J>Umm, because this is something this is just for demo purposes.</v>
+
+00:03:10.150 --> 00:03:19.020
+<v Andrew J>For sure that will not be in production environment and also well the the idea more or less if we can go with the.</v>
+
+00:03:21.220 --> 00:03:25.390
+<v Andrew J>The dashboard application created by Ruth Beth A.</v>
+
+00:03:25.430 --> 00:03:29.410
+<v Andrew J>Maybe with that solution is good enough for for the demo.</v>
+
+00:03:30.740 --> 00:03:31.150
+<v Andrew J>OK.</v>
+
+00:03:31.610 --> 00:03:34.620
+<v Andrew J>But yeah, that's another point to be discussed probably in the today's meeting.</v>
+
+00:03:35.620 --> 00:03:35.940
+<v Marcos Alonso>OK.</v>
+
+00:03:38.880 --> 00:03:39.290
+<v Marcos Alonso>OK.</v>
+
+00:03:39.340 --> 00:03:47.330
+<v Marcos Alonso>And apart from that, we were taking some issues with sirval. Umm.</v>
+
+00:03:48.870 --> 00:03:50.110
+<v Andrew J>Training process maybe?</v>
+
+00:03:50.310 --> 00:03:50.670
+<v Marcos Alonso>Yeah.</v>
+
+00:04:00.070 --> 00:04:00.320
+<v Andrew J>Mm-hmm.</v>
+
+00:03:50.730 --> 00:04:09.510
+<v Marcos Alonso>Training process and well the issue was with the data because they they were sending just one week and that is specified in a column called period ID and ELISA doesn't support AM.</v>
+
+00:04:12.360 --> 00:04:19.490
+<v Marcos Alonso>All the values with the same uh, they're same value in in one single column.</v>
+
+00:04:19.540 --> 00:04:22.880
+<v Marcos Alonso>OK, so we need at least two different values for every column.</v>
+
+00:04:25.970 --> 00:04:31.320
+<v Marcos Alonso>And the videos ID value was the same for all the the rows for that column.</v>
+
+00:04:31.330 --> 00:04:37.620
+<v Marcos Alonso>So they have triggered 2 more trainings, one for two weeks and another one for six weeks.</v>
+
+00:04:38.010 --> 00:04:52.030
+<v Marcos Alonso>And those trainings worked well in our side, but they are checking in their code because they are saying that it in DC in error but well in in our status in the MLA it's in delivery status.</v>
+
+00:04:54.080 --> 00:04:59.160
+<v Andrew J>OK, but that restriction makes makes sense because not sure.</v>
+
+00:05:00.260 --> 00:05:00.530
+<v Marcos Alonso>Yeah.</v>
+
+00:05:00.540 --> 00:05:04.760
+<v Marcos Alonso>It's the same that happened in in Omnisales, hey, if only.</v>
+
+00:05:04.170 --> 00:05:10.410
+<v Andrew J>And this is just to to avoid, I mean to to to make sure that there is a minimum amount of data maybe.</v>
+
+00:05:16.620 --> 00:05:17.780
+<v Andrew J>Umm OK.</v>
+
+00:05:10.340 --> 00:05:18.810
+<v Marcos Alonso>I think it's by design because the model needs to have at least two classes for every a column.</v>
+
+00:05:19.350 --> 00:05:19.940
+<v Marcos Alonso>Umm.</v>
+
+00:05:20.190 --> 00:05:22.530
+<v Marcos Alonso>Maybe Roberto or Silvia can explain better.</v>
+
+00:05:22.810 --> 00:05:23.180
+<v Andrew J>OK.</v>
+
+00:05:25.180 --> 00:05:25.400
+<v Marcos Alonso>Umm.</v>
+
+00:05:23.190 --> 00:05:27.180
+<v Andrew J>If that is by design, is by design, then, uh, just I wanted to understand a little bit more.</v>
+
+00:05:27.330 --> 00:05:35.830
+<v Andrew J>The only the only point is well, I'm not sure if this error is more or less easy to to find in the in the road traces.</v>
+
+00:05:37.530 --> 00:05:42.310
+<v Andrew J>Otherwise, maybe we we should work a little bit more in the error handling.</v>
+
+00:05:44.440 --> 00:05:44.660
+<v Marcos Alonso>Yeah.</v>
+
+00:05:42.740 --> 00:05:46.350
+<v Andrew J>Not sure I mean because quite sure that this error will happen.</v>
+
+00:05:46.930 --> 00:05:47.160
+<v Marcos Alonso>Hmm.</v>
+
+00:05:48.770 --> 00:05:49.070
+<v Marcos Alonso>Yeah.</v>
+
+00:05:48.810 --> 00:05:49.370
+<v Andrew J>In the future.</v>
+
+00:05:57.430 --> 00:05:57.630
+<v Andrew J>Umm.</v>
+
+00:05:49.080 --> 00:05:59.120
+<v Marcos Alonso>Also another issue that they has was that one column is missing and this is not properly.</v>
+
+00:06:00.420 --> 00:06:01.120
+<v Andrew J>Manage OK.</v>
+
+00:06:01.990 --> 00:06:05.630
+<v Marcos Alonso>Manage and informed in the response.</v>
+
+00:06:07.410 --> 00:06:07.640
+<v Andrew J>OK.</v>
+
+00:06:07.120 --> 00:06:09.960
+<v Marcos Alonso>E because the the the the data frame is not loaded.</v>
+
+00:06:11.700 --> 00:06:11.880
+<v Andrew J>Mm-hmm.</v>
+
+00:06:15.930 --> 00:06:16.180
+<v Andrew J>Umm.</v>
+
+00:06:10.150 --> 00:06:28.800
+<v Marcos Alonso>Before the pipeline and you need to go to the pipeline locks in order to see the error, but well, that's something that we can improve as well in in omnisales just loading the the data frame, check if all the columns are there and we can return more descriptive error in the monitoring API.</v>
+
+00:06:37.540 --> 00:06:37.760
+<v Marcos Alonso>Hmm.</v>
+
+00:06:29.670 --> 00:06:39.520
+<v Andrew J>Ohh yeah, I mean if we I mean, according to me it's a good idea to have this kind of validations before starting the process.</v>
+
+00:06:39.530 --> 00:06:39.730
+<v Andrew J>Right.</v>
+
+00:06:44.500 --> 00:06:45.550
+<v Marcos Alonso>Umm Yep.</v>
+
+00:06:39.740 --> 00:06:45.960
+<v Andrew J>Because if we don't have the required information, we can fail at the very beginning in an appropriate way.</v>
+
+00:06:46.130 --> 00:06:47.230
+<v Andrew J>Yeah. Makes sense.</v>
+
+00:06:47.910 --> 00:06:48.070
+<v Marcos Alonso>Yeah.</v>
+
+00:06:47.610 --> 00:06:50.010
+<v Andrew J>Yeah, this this is kind of robustness, OK.</v>
+
+00:06:50.090 --> 00:06:50.460
+<v Marcos Alonso>Yeah.</v>
+
+00:06:50.470 --> 00:06:51.780
+<v Marcos Alonso>And Wednesday data frame is loaded.</v>
+
+00:06:51.790 --> 00:06:57.870
+<v Marcos Alonso>We can make all the checks that we want before sending it to the data prep pipeline.</v>
+
+00:06:58.890 --> 00:06:59.120
+<v Andrew J>Mm-hmm.</v>
+
+00:07:00.550 --> 00:07:01.350
+<v Andrew J>OK. Yep.</v>
+
+00:07:03.880 --> 00:07:05.360
+<v Marcos Alonso>Umm, that's all from my side.</v>
+
+00:07:06.990 --> 00:07:07.470
+<v Andrew J>OK.</v>
+
+00:07:14.670 --> 00:07:14.890
+<v Marcos Alonso>Hmm.</v>
+
+00:07:07.550 --> 00:07:17.000
+<v Andrew J>Yeah, following the sirval topic, I'm just forwarded an email to you, Marcos, Louise and also to rajabalaji.</v>
+
+00:07:17.010 --> 00:07:18.870
+<v Andrew J>And I think you also you are on copy.</v>
+
+00:07:19.820 --> 00:07:21.630
+<v Andrew J>Umm yeah.</v>
+
+00:07:21.640 --> 00:07:23.130
+<v Andrew J>Please take a look at your inbox.</v>
+
+00:07:24.030 --> 00:07:28.570
+<v Andrew J>Basically here the point is that they are, as everyone in Nelson IQ.</v>
+
+00:07:28.860 --> 00:07:35.460
+<v Andrew J>They are trying to fix the and to to remediate the vulnerabilities and basically there are there.</v>
+
+00:07:35.510 --> 00:07:43.380
+<v Andrew J>There is one vulnerability that is due to we are not using our valid testificate in our APIs.</v>
+
+00:07:43.750 --> 00:07:43.970
+<v Andrew J>OK.</v>
+
+00:07:44.190 --> 00:07:44.490
+<v Marcos Alonso>Umm.</v>
+
+00:07:44.930 --> 00:08:01.630
+<v Andrew J>Umm, so here the the point is to to explore how to enable our certificate in our application server because that will be needed if they want to fix or to remediate the vulnerability. OK.</v>
+
+00:08:02.550 --> 00:08:03.490
+<v Marcos Alonso>Umm OK.</v>
+
+00:08:04.070 --> 00:08:04.680
+<v Andrew J>They're they're good.</v>
+
+00:08:04.690 --> 00:08:08.200
+<v Andrew J>Point of this is that we already have valid 35 Kate.</v>
+
+00:08:08.250 --> 00:08:11.280
+<v Andrew J>This is the one that we are using in the CIS to the home page.</v>
+
+00:08:12.080 --> 00:08:15.610
+<v Andrew J>OK, so we don't need to wait for a new certificate.</v>
+
+00:08:15.620 --> 00:08:28.190
+<v Andrew J>We can use the same than the CIS to the home page and the point is to figure out how to set up this this testificate in in the server where we are exposing our API.</v>
+
+00:08:30.000 --> 00:08:30.270
+<v Andrew J>Yeah.</v>
+
+00:08:30.600 --> 00:08:45.930
+<v Andrew J>I mean it's I imagine that that should not be a big deal, probably that it's just a matter of configuration, but yeah, but my recommendation is to to explore a little bit the process and to make some tests in our load and vironment to make sure that we are not going to break anything.</v>
+
+00:08:47.350 --> 00:08:47.630
+<v Marcos Alonso>OK.</v>
+
+00:08:49.530 --> 00:08:51.940
+<v Andrew J>But yeah, but makes sense to enable the the certificate.</v>
+
+00:08:52.320 --> 00:08:59.950
+<v Andrew J>UM, because if we are forcing to use HTTPS protocol makes sense to to have a valid certificate.</v>
+
+00:09:00.380 --> 00:09:01.160
+<v Marcos Alonso>Yeah. OK.</v>
+
+00:09:01.870 --> 00:09:02.750
+<v Andrew J>Yeah. OK.</v>
+
+00:09:02.760 --> 00:09:03.120
+<v Andrew J>So guys.</v>
+
+00:09:03.130 --> 00:09:03.460
+<v Andrew J>Yep.</v>
+
+00:09:03.470 --> 00:09:06.280
+<v Andrew J>Please uh for the certificate.</v>
+
+00:09:08.390 --> 00:09:08.660
+<v Marcos Alonso>Umm.</v>
+
+00:09:06.290 --> 00:09:19.210
+<v Andrew J>You can reach out to rajabalaji rajabalaji to should provide should be able to provide the certificate and then probably you can play around about how to to enable that in the in our application server.</v>
+
+00:09:21.810 --> 00:09:22.070
+<v Marcos Alonso>OK.</v>
+
+00:09:21.540 --> 00:09:23.850
+<v Andrew J>I mean, it's not this is not really, really urgent.</v>
+
+00:09:23.860 --> 00:09:28.110
+<v Andrew J>It's not very urgent, but but well, this is something that we need to and you know, write.</v>
+
+00:09:28.120 --> 00:09:31.760
+<v Andrew J>The people are now a lot of people are working in the vulnerabilities.</v>
+
+00:09:33.040 --> 00:09:35.280
+<v Andrew J>So yeah, I don't want to be in the critical path.</v>
+
+00:09:38.690 --> 00:09:39.150
+<v Marcos Alonso>OK.</v>
+
+00:09:39.160 --> 00:09:40.930
+<v Marcos Alonso>And which repository is this one?</v>
+
+00:09:42.110 --> 00:09:43.220
+<v Marcos Alonso>They should ship, you know, to wait.</v>
+
+00:09:53.350 --> 00:09:53.730
+<v Marcos Alonso>Ohh.</v>
+
+00:09:43.850 --> 00:09:55.080
+<v Andrew J>They repository we well, I mean this is the where the Umbrella API and the monitoring API the I mean the the DMLE framework.</v>
+
+00:09:56.010 --> 00:09:56.250
+<v Marcos Alonso>Hmm.</v>
+
+00:09:57.720 --> 00:09:59.080
+<v Marcos Alonso>Umm yeah.</v>
+
+00:09:55.090 --> 00:10:00.640
+<v Andrew J>I'm not sure exactly the name of the repository of that, but I'm talking about these API.</v>
+
+00:10:00.810 --> 00:10:21.100
+<v Andrew J>I mean this is and this is a specially I talking about shieldwall but if we enable them the certificate uh, I mean that should be for all for consumers, OK and this is one of the tests that we need to do that should be something optional.</v>
+
+00:10:21.110 --> 00:10:21.500
+<v Andrew J>I mean if.</v>
+
+00:10:23.820 --> 00:10:32.510
+<v Andrew J>Doesn't want to validate the certificate as now that's rework if the client wants to certificate.</v>
+
+00:10:32.960 --> 00:10:39.760
+<v Andrew J>Sorry, wants to validate the certificate in order to avoid the warning and to avoid the the building ability.</v>
+
+00:10:39.770 --> 00:10:41.460
+<v Andrew J>Then also that's will work.</v>
+
+00:10:41.790 --> 00:10:42.120
+<v Andrew J>OK.</v>
+
+00:10:42.980 --> 00:10:46.090
+<v Marcos Alonso>But I think this is when performing a request.</v>
+
+00:10:46.100 --> 00:10:46.820
+<v Marcos Alonso>I think this is the.</v>
+
+00:10:42.210 --> 00:10:48.040
+<v Andrew J>So here the point is, yeah, yes, suck.</v>
+
+00:10:51.060 --> 00:10:51.390
+<v Marcos Alonso>Good.</v>
+
+00:10:50.560 --> 00:10:51.880
+<v Andrew J>The second at that moment.</v>
+
+00:10:55.500 --> 00:10:56.550
+<v Andrew J>No, no.</v>
+
+00:10:51.440 --> 00:10:56.560
+<v Marcos Alonso>Maybe she enough weight shutting verify to true in this case.</v>
+
+00:10:56.860 --> 00:10:58.450
+<v Andrew J>Yeah, but for them it's enough.</v>
+
+00:11:03.430 --> 00:11:03.650
+<v Marcos Alonso>Hmm.</v>
+
+00:10:58.920 --> 00:11:05.100
+<v Andrew J>But before that, for us, we need to we need to set up the certificate in our application server.</v>
+
+00:11:06.140 --> 00:11:06.420
+<v Marcos Alonso>OK.</v>
+
+00:11:07.440 --> 00:11:10.810
+<v Andrew J>Because they're then let's say it's unknown.</v>
+
+00:11:10.900 --> 00:11:14.730
+<v Andrew J>I mean they our application server where what applications are deployed?</v>
+
+00:11:14.860 --> 00:11:18.310
+<v Andrew J>Doesn't know at the certificate the certificate is not there.</v>
+
+00:11:18.710 --> 00:11:22.040
+<v Andrew J>So the point here is to configure properly the.</v>
+
+00:11:23.320 --> 00:11:27.140
+<v Andrew J>Maybe the location of the certificate in the server and then probably everything will work.</v>
+
+00:11:27.840 --> 00:11:28.460
+<v Marcos Alonso>Hmm, OK.</v>
+
+00:11:31.270 --> 00:11:32.170
+<v Marcos Alonso>OK, we will check.</v>
+
+00:11:32.380 --> 00:11:33.230
+<v Andrew J>Yeah, that makes sense.</v>
+
+00:11:35.430 --> 00:11:36.040
+<v Marcos Alonso>Yeah.</v>
+
+00:11:33.240 --> 00:11:40.270
+<v Andrew J>I mean please guys review the the email probably you will get more details and then if you have doubts we can discuss this offline.</v>
+
+00:11:40.280 --> 00:11:41.890
+<v Andrew J>I don't want to to stop the meeting here.</v>
+
+00:11:41.900 --> 00:11:42.110
+<v Andrew J>OK.</v>
+
+00:11:42.120 --> 00:11:44.560
+<v Andrew J>But something more or less is should be clear.</v>
+
+00:11:46.170 --> 00:11:46.370
+<v Marcos Alonso>OK.</v>
+
+00:11:46.960 --> 00:11:50.040
+<v Andrew J>Yep, OK, good.</v>
+
+00:11:53.940 --> 00:11:54.420
+<v Jesus Rujas>OK.</v>
+
+00:11:54.430 --> 00:11:54.750
+<v Jesus Rujas>Yeah.</v>
+
+00:11:54.760 --> 00:11:55.570
+<v Jesus Rujas>Thank you, Marcos.</v>
+
+00:11:56.040 --> 00:11:56.750
+<v Jesus Rujas>Uh, now that.</v>
+
+00:11:57.660 --> 00:11:58.490
+<v Jesus Rujas>Can you continue please?</v>
+
+00:11:59.460 --> 00:12:02.060
+<v Caroline Raducanu>Yesterday was working to the promo.</v>
+
+00:12:03.500 --> 00:12:05.220
+<v Caroline Raducanu>Looks like you're metric workers.</v>
+
+00:12:06.100 --> 00:12:16.240
+<v Caroline Raducanu>Uh, and I was talking with Leo to Shanes, a title of a title in the name of beautiful on the umbrella.</v>
+
+00:12:16.440 --> 00:12:22.290
+<v Caroline Raducanu>Breakfast to to pass to the to the, to the input that app from the pipeline.</v>
+
+00:12:23.830 --> 00:12:26.100
+<v Caroline Raducanu>Uh for today.</v>
+
+00:12:26.110 --> 00:12:30.530
+<v Caroline Raducanu>I think that's I don't have a lot of thing to do because I I think that's I think it's your life.</v>
+
+00:12:31.560 --> 00:12:41.180
+<v Caroline Raducanu>Pending from the metrics, I'm from predictors, but I want to review if I have some pending or later.</v>
+
+00:12:41.190 --> 00:12:43.140
+<v Caroline Raducanu>I think this I can to tell me.</v>
+
+00:12:43.450 --> 00:12:46.660
+<v Caroline Raducanu>I will do so I'm going to to send it.</v>
+
+00:12:46.670 --> 00:12:49.720
+<v Caroline Raducanu>How to continue we with Promo Flyer?</v>
+
+00:12:52.090 --> 00:13:00.350
+<v Andrew J>Yeah, it regarding the promo flyer, as you know, right, we are in the in the definition of step of the specifications. Umm.</v>
+
+00:13:02.550 --> 00:13:10.320
+<v Andrew J>But that we are we are doing some changes in the specifications because they according with our last discussion.</v>
+
+00:13:12.650 --> 00:13:15.640
+<v Andrew J>But we need to really find a little bit them.</v>
+
+00:13:15.850 --> 00:13:17.040
+<v Andrew J>Umm.</v>
+
+00:13:17.500 --> 00:13:23.640
+<v Andrew J>Hopefully for the next week, everything will be greater, more clear. Umm.</v>
+
+00:13:26.740 --> 00:13:28.390
+<v Andrew J>But yeah, for now I think.</v>
+
+00:13:33.420 --> 00:13:42.130
+<v Andrew J>Yeah, maybe you can help a you can align with Marcos in order to make some changes in the.</v>
+
+00:13:44.110 --> 00:13:45.580
+<v Marcos Alonso>And then she's able to depository.</v>
+
+00:13:47.600 --> 00:13:47.800
+<v Caroline Raducanu>OK.</v>
+
+00:13:44.700 --> 00:13:47.950
+<v Andrew J>In the in the.</v>
+
+00:13:47.990 --> 00:13:49.550
+<v Andrew J>Yeah, this is something that we need to do.</v>
+
+00:13:49.600 --> 00:13:50.450
+<v Andrew J>Yeah, you're right.</v>
+
+00:13:50.560 --> 00:13:51.830
+<v Andrew J>I mean, there are a couple of things.</v>
+
+00:13:51.840 --> 00:13:53.150
+<v Andrew J>Not but he.</v>
+
+00:13:55.390 --> 00:13:58.760
+<v Andrew J>But if you tax, but yeah, there are a couple of things that are still pending.</v>
+
+00:13:58.770 --> 00:14:10.040
+<v Andrew J>One of them is the is that about the the Bobs the CICD processes and the other one Marcos is the that also I would like to to start working on that to fix the issue.</v>
+
+00:14:10.940 --> 00:14:13.210
+<v Andrew J>How about the time to download the the file?</v>
+
+00:14:16.180 --> 00:14:16.420
+<v Marcos Alonso>Umm.</v>
+
+00:14:13.220 --> 00:14:17.710
+<v Andrew J>I mean to register the file in the in the data in the data set.</v>
+
+00:14:19.310 --> 00:14:19.490
+<v Marcos Alonso>Yeah.</v>
+
+00:14:19.920 --> 00:14:25.320
+<v Andrew J>Or on the cells and on the and the time path, and so maybe your.</v>
+
+00:14:25.690 --> 00:14:32.830
+<v Andrew J>All I can help on that as they see work also in those activities in those initiatives.</v>
+
+00:14:35.750 --> 00:14:35.990
+<v Caroline Raducanu>OK.</v>
+
+00:14:36.300 --> 00:14:42.370
+<v Andrew J>So Yep, I mean, maybe you can until Promo Flyer is a little bit more stable.</v>
+
+00:14:43.790 --> 00:14:44.000
+<v Caroline Raducanu>Umm.</v>
+
+00:14:42.960 --> 00:14:46.830
+<v Andrew J>Umm, maybe you can help on this kind of activities.</v>
+
+00:14:48.240 --> 00:14:48.590
+<v Caroline Raducanu>Pepper.</v>
+
+00:14:50.440 --> 00:14:50.620
+<v Andrew J>Mm-hmm.</v>
+
+00:14:48.600 --> 00:14:50.880
+<v Caroline Raducanu>Later I talked with Michael about that.</v>
+
+00:14:51.480 --> 00:14:52.480
+<v Andrew J>Yep. Good.</v>
+
+00:14:54.530 --> 00:14:54.750
+<v Caroline Raducanu>OK.</v>
+
+00:14:55.920 --> 00:14:57.660
+<v Caroline Raducanu>So that's all from my side.</v>
+
+00:14:58.960 --> 00:15:00.120
+<v Jesus Rujas>OK, thanks. Alright.</v>
+
+00:15:00.740 --> 00:15:02.440
+<v Jesus Rujas>Uh, Javier, you're the next.</v>
+
+00:15:20.450 --> 00:15:20.710
+<v Andrew J>Hmm.</v>
+
+00:15:07.540 --> 00:15:28.040
+<v Alan Ross>And yes, OK and she logo also we can get the line in Promo Flyer probably apart from this small task you're discussing, we will need to deploy probably some tests the API, the Umbrella API just for testing we have this ready because the DLT team for being more confident about the the estimation of the tasks they have to do.</v>
+
+00:15:28.650 --> 00:15:44.740
+<v Alan Ross>They are requesting some demo or some sample so probably we can just release this in there and the environment, not the securing nothing because the prediction is not prepared but well just for having something they could at least start testing.</v>
+
+00:15:45.210 --> 00:15:48.440
+<v Alan Ross>OK, we have to configure some parts of the definition, yeah.</v>
+
+00:15:46.290 --> 00:15:50.980
+<v Andrew J>Yeah, and this is exactly this is what we discussed yesterday, Javier.</v>
+
+00:15:50.990 --> 00:15:55.860
+<v Andrew J>I mean, we don't need to to go with the final version, I mean because the final version is not there.</v>
+
+00:15:55.950 --> 00:15:56.230
+<v Andrew J>Yeah.</v>
+
+00:15:56.240 --> 00:15:58.140
+<v Andrew J>Yes, adami.</v>
+
+00:15:55.040 --> 00:15:58.510
+<v Alan Ross>No, no, no one has a say to to complete final version.</v>
+
+00:15:58.710 --> 00:15:59.550
+<v Andrew J>Yeah, Adami 1.</v>
+
+00:16:04.520 --> 00:16:04.770
+<v Andrew J>Hmm.</v>
+
+00:16:09.480 --> 00:16:09.810
+<v Andrew J>Mm-hmm.</v>
+
+00:15:58.620 --> 00:16:10.420
+<v Alan Ross>Yeah, just to show the the regular umbrella behavior and playing with the monitoring API, the content API if they want to to upload files or they want to share the links.</v>
+
+00:16:13.260 --> 00:16:13.420
+<v Andrew J>No.</v>
+
+00:16:11.470 --> 00:16:16.620
+<v Alan Ross>And I guess it's posting the at least the prediction API that is more or less I think is clear.</v>
+
+00:16:16.630 --> 00:16:22.290
+<v Alan Ross>The information they have to send, so we'll probably we can focus also on that part having.</v>
+
+00:16:21.870 --> 00:16:23.980
+<v Andrew J>No, I I makes a lot of sense.</v>
+
+00:16:23.990 --> 00:16:33.020
+<v Andrew J>Actually, according to me, Olga, this activity that have you talking about probably is more priority than the two activities that I I was talking about before.</v>
+
+00:16:33.780 --> 00:16:34.180
+<v Andrew J>OK.</v>
+
+00:16:34.250 --> 00:16:38.870
+<v Andrew J>So then please, what was on this?</v>
+
+00:16:40.940 --> 00:16:41.350
+<v Caroline Raducanu>E and.</v>
+
+00:16:38.920 --> 00:16:44.100
+<v Andrew J>OK, makes makes more sense because we need to move faster in the problem of Flyers.</v>
+
+00:16:45.330 --> 00:16:45.840
+<v Caroline Raducanu>What about?</v>
+
+00:16:45.850 --> 00:16:54.890
+<v Caroline Raducanu>But the moment and the metrics, women on the the work is is working, don't call to the prediction because they don't have nothing.</v>
+
+00:16:58.990 --> 00:16:59.530
+<v Alan Ross>Yeah, we can.</v>
+
+00:16:56.430 --> 00:17:04.760
+<v Caroline Raducanu>Uh, we have to to make the department for the with with the O predictive working.</v>
+
+00:17:04.770 --> 00:17:10.150
+<v Caroline Raducanu>Then I think that's you executed the in the pipeline from Jenkins.</v>
+
+00:17:10.430 --> 00:17:13.930
+<v Caroline Raducanu>I think that's everything is applied to the Arabian.</v>
+
+00:17:17.040 --> 00:17:18.410
+<v Andrew J>OK, OK.</v>
+
+00:17:13.940 --> 00:17:18.580
+<v Caroline Raducanu>Anything that they can do testing something other, OK?</v>
+
+00:17:24.420 --> 00:17:24.650
+<v Caroline Raducanu>Mm-hmm.</v>
+
+00:17:18.420 --> 00:17:29.640
+<v Andrew J>So then please double check and the here the the the goal is just to deploy something dummy but but I mean we don't need to call to the prediction nothing like that.</v>
+
+00:17:29.690 --> 00:17:32.230
+<v Andrew J>But yeah, just to whatever.</v>
+
+00:17:32.500 --> 00:17:35.740
+<v Andrew J>I'm lookup whatever no.</v>
+
+00:17:36.360 --> 00:17:36.630
+<v Caroline Raducanu>Umm.</v>
+
+00:17:30.100 --> 00:17:36.930
+<v Alan Ross>Yeah, we can return some dummy URL S or whatever the the purpose will be only.</v>
+
+00:17:36.940 --> 00:17:41.000
+<v Alan Ross>So when the the result we can discuss a part.</v>
+
+00:17:49.430 --> 00:17:49.640
+<v Andrew J>Umm.</v>
+
+00:17:41.010 --> 00:17:50.230
+<v Alan Ross>If having sent out but just exposing the Umbrella API and they can call the monitoring and for understanding in the Lt with the some real example that they can work with with that.</v>
+
+00:17:51.260 --> 00:18:22.520
+<v Alan Ross>Yeah, well, from my updates will also yesterday we were focused on discussion the main part that now is more in doubt is the JSON definition for the prediction and feedback covering the the scenarios there and well here we are aligned with there and the team with higher Martinez mainly also with Leo and the idea will be to have something understanding the the scenarios there managing or the information they want to cover or having this ready and being easy to match.</v>
+
+00:18:22.530 --> 00:18:28.230
+<v Alan Ross>Also, the feedback part for the metrics with the prediction results that are send initially.</v>
+
+00:18:28.610 --> 00:18:39.240
+<v Alan Ross>Apart from that also I was checking some programming RTM but to go say with some authentication on site library they were in using with not updated definitions.</v>
+
+00:18:40.250 --> 00:18:48.850
+<v Alan Ross>Hey and in the part of AIX there were some doubts on a couple of issues, but well, no problem for now in our side.</v>
+
+00:18:48.920 --> 00:18:54.550
+<v Alan Ross>Just Sunday cannot define well for private labels and also the ECS integration.</v>
+
+00:18:54.600 --> 00:18:54.940
+<v Alan Ross>Done.</v>
+
+00:18:56.280 --> 00:19:06.870
+<v Alan Ross>I'm a person that in the generative, I know much progress from my side, but well, I think with Marcos upgrade I'm just trying the grade the package in local but having some trouble on that part.</v>
+
+00:19:19.300 --> 00:19:19.550
+<v Andrew J>Hmm.</v>
+
+00:19:07.220 --> 00:19:20.810
+<v Alan Ross>So I will also connect with Marcos, probably for helping her aligning with radial, Balaji or if we use Azure, the deployment generates some basic container and start checking if we can deploy in the app.</v>
+
+00:19:20.860 --> 00:19:25.670
+<v Alan Ross>But I think we're better already has a done with the demo deployments and container and.</v>
+
+00:19:24.470 --> 00:19:26.780
+<v Andrew J>Yeah, it's ugly.</v>
+
+00:19:26.790 --> 00:19:32.480
+<v Andrew J>Let's try to follow that approach because Robert was able to deploy something, so maybe we can follow.</v>
+
+00:19:32.490 --> 00:19:34.760
+<v Andrew J>I mean for the demo purposes everything is OK.</v>
+
+00:19:34.770 --> 00:19:37.720
+<v Andrew J>So just pick the faster option.</v>
+
+00:19:37.790 --> 00:19:43.070
+<v Andrew J>OK, remember this is something fast and maybe 30, OK.</v>
+
+00:19:45.460 --> 00:19:47.770
+<v Alan Ross>Hmm, they're probably a little bit of 1 approach.</v>
+
+00:19:50.510 --> 00:19:51.020
+<v Andrew J>Hmm.</v>
+
+00:19:51.060 --> 00:19:51.210
+<v Andrew J>Yeah.</v>
+
+00:19:52.610 --> 00:19:53.140
+<v Andrew J>Circling.</v>
+
+00:19:47.780 --> 00:19:53.210
+<v Alan Ross>That was something the same that we have in CIS at first just deploying in the Azure page.</v>
+
+00:19:53.750 --> 00:19:53.900
+<v Andrew J>Yeah.</v>
+
+00:19:53.500 --> 00:19:54.830
+<v Alan Ross>If it works, will be enough.</v>
+
+00:19:55.400 --> 00:19:56.480
+<v Andrew J>Yep, Yep.</v>
+
+00:19:59.220 --> 00:20:00.940
+<v Alan Ross>And from my side I think nothing more.</v>
+
+00:20:02.760 --> 00:20:03.110
+<v Andrew J>I'm good.</v>
+
+00:20:03.120 --> 00:20:03.430
+<v Andrew J>Thank you.</v>
+
+00:20:06.830 --> 00:20:07.320
+<v Jesus Rujas>OK.</v>
+
+00:20:07.360 --> 00:20:08.020
+<v Jesus Rujas>Thanks, kavitha.</v>
+
+00:20:08.310 --> 00:20:09.320
+<v Jesus Rujas>By Sally. Yeah.</v>
+
+00:20:09.330 --> 00:20:09.870
+<v Jesus Rujas>Can you continue?</v>
+
+00:20:13.100 --> 00:20:13.550
+<v Elena Drew>Sure.</v>
+
+00:20:13.980 --> 00:20:14.590
+<v Elena Drew>Hi.</v>
+
+00:20:15.050 --> 00:20:15.850
+<v Elena Drew>Hi everyone.</v>
+
+00:20:15.860 --> 00:20:33.290
+<v Elena Drew>So in the data preparation side, we are making a progress in a changes to make the code compatible with pandas and bishwa and we also done with the L2 validation in BAU.</v>
+
+00:20:33.700 --> 00:20:39.890
+<v Elena Drew>So I just wanted to confirm that are we done with like Humberto was working on L1 validation.</v>
+
+00:20:40.140 --> 00:20:52.500
+<v Elena Drew>So if that is done so, we can try running both step in a single workflow and on the other side in omnishopper training worker documentation is going on.</v>
+
+00:20:52.870 --> 00:20:59.550
+<v Elena Drew>Divyasri is working on that and no no such update from the keeper of extraction.</v>
+
+00:21:01.130 --> 00:21:03.080
+<v Elena Drew>Yeah, that, that's all from my end.</v>
+
+00:21:04.950 --> 00:21:13.160
+<v Alan Ross>You know, like so the one question regarding the L1 doubt, Humberto, complete for Canada immigration of the notebooks.</v>
+
+00:21:14.170 --> 00:21:28.490
+<v Alan Ross>But in the pandas mode, so the point if you have a check for pyspark compatibility and it could be done not too if you have face some conflict there or some problem with the code.</v>
+
+00:21:28.640 --> 00:21:34.190
+<v Alan Ross>And for Australia, the point is that in pandas whistle is will be enough to have this code.</v>
+
+00:21:34.200 --> 00:21:37.650
+<v Alan Ross>So for now not needing to also be compatible with PYSPARK.</v>
+
+00:21:38.810 --> 00:21:39.080
+<v Alan Ross>Yeah.</v>
+
+00:21:39.090 --> 00:21:48.820
+<v Alan Ross>So they point will be to just say upgrade or check the last changes from Revathi and he adapting in the code because there were some missing information mainly in L2.</v>
+
+00:21:49.230 --> 00:21:51.250
+<v Alan Ross>But for L1 also the same.</v>
+
+00:21:52.950 --> 00:21:53.110
+<v Elena Drew>OK.</v>
+
+00:21:53.180 --> 00:21:59.470
+<v Elena Drew>Like so you shared those two notebooks right in the chat earlier in the last week.</v>
+
+00:21:59.590 --> 00:22:06.140
+<v Elena Drew>So we are done with the L2 that you mentioned that Humberto was testing the L1 in EU.</v>
+
+00:22:06.150 --> 00:22:16.980
+<v Elena Drew>So I was just confirming that if if that is done then we we are also done with L2 step validating L2 step just to check just comparing the note notebooks, yeah.</v>
+
+00:22:14.010 --> 00:22:19.700
+<v Alan Ross>For us, for Australia, Humberto was enabled to check it sort of postalia.</v>
+
+00:22:19.710 --> 00:22:25.340
+<v Alan Ross>We will also need to check their one if you are having doubts there we should check the other one because I'm better.</v>
+
+00:22:25.460 --> 00:22:25.630
+<v Elena Drew>So.</v>
+
+00:22:25.350 --> 00:22:42.500
+<v Alan Ross>Finally, was enabled to to complete the OR iterate in this part, just check the content, so probably is very similar to the Australia one and probably after that maybe we can refactor some code, but the point will be to take this notebook and adapt the the current code in the L1.</v>
+
+00:22:43.730 --> 00:22:44.080
+<v Elena Drew>OK.</v>
+
+00:22:44.130 --> 00:22:45.140
+<v Elena Drew>We we can check.</v>
+
+00:22:45.150 --> 00:22:45.500
+<v Elena Drew>Uh.</v>
+
+00:22:45.510 --> 00:22:47.670
+<v Elena Drew>For L1 as well, if if that's fine.</v>
+
+00:22:49.550 --> 00:22:50.250
+<v Alan Ross>OK, perfect.</v>
+
+00:22:50.190 --> 00:22:50.520
+<v Elena Drew>Yeah.</v>
+
+00:22:50.260 --> 00:22:50.530
+<v Alan Ross>Thank you.</v>
+
+00:22:50.590 --> 00:22:51.700
+<v Elena Drew>Yeah, that.</v>
+
+00:22:51.710 --> 00:22:53.520
+<v Elena Drew>That's it from my end.</v>
+
+00:22:54.660 --> 00:22:55.130
+<v Andrew J>OK.</v>
+
+00:22:55.140 --> 00:22:59.910
+<v Andrew J>Umm, about the Gpub instructions I have a doubt.</v>
+
+00:23:00.310 --> 00:23:01.100
+<v Andrew J>Umm.</v>
+
+00:23:03.160 --> 00:23:06.420
+<v Andrew J>Maybe that will take a couple of minutes, but yeah, I would like.</v>
+
+00:23:08.850 --> 00:23:11.880
+<v Andrew J>You by Sally your you have error both.</v>
+
+00:23:13.070 --> 00:23:17.240
+<v Andrew J>I would like yeah, you guys, you can reach out to dipsikha.</v>
+
+00:23:17.470 --> 00:23:22.840
+<v Andrew J>Do you know who is dipsikha right Dipsikha is working in them, but basically in the Omni cells.</v>
+
+00:23:23.230 --> 00:23:23.450
+<v Andrew J>OK.</v>
+
+00:23:24.570 --> 00:23:26.890
+<v Andrew J>I'm sorry, in the omnishopper I initiatives.</v>
+
+00:23:27.210 --> 00:23:28.470
+<v Alan Ross>The only season Omnishopper.</v>
+
+00:23:28.790 --> 00:23:30.760
+<v Andrew J>Yeah, basically, yeah.</v>
+
+00:23:30.770 --> 00:23:37.390
+<v Andrew J>Have a meeting yesterday or a couple of days back with her and other stakeholders and basically.</v>
+
+00:23:39.300 --> 00:23:44.280
+<v Andrew J>See was complaining about the Deepak extractions?</v>
+
+00:23:45.210 --> 00:23:47.700
+<v Andrew J>You didn't have good values.</v>
+
+00:23:50.480 --> 00:23:53.710
+<v Andrew J>Or some values Canada, Canada.</v>
+
+00:23:50.120 --> 00:23:59.230
+<v Alan Ross>But with Deepak structures, because Dipsikha is Dipsikha is working as far as I know directly with OGRDS structures, not our structure.</v>
+
+00:24:00.030 --> 00:24:00.450
+<v Andrew J>Yeah.</v>
+
+00:24:00.490 --> 00:24:01.500
+<v Andrew J>So that's that's.</v>
+
+00:24:01.790 --> 00:24:07.060
+<v Andrew J>Yeah, that, that's that is one of the the thoughts that now comes to my mind.</v>
+
+00:24:08.070 --> 00:24:15.380
+<v Andrew J>So initially this cargo destruction for another different, I doubt in a lot.</v>
+
+00:24:15.390 --> 00:24:16.100
+<v Andrew J>How have you?</v>
+
+00:24:17.550 --> 00:24:17.850
+<v Alan Ross>OK.</v>
+
+00:24:17.860 --> 00:24:18.450
+<v Alan Ross>OK, OK.</v>
+
+00:24:18.490 --> 00:24:20.990
+<v Alan Ross>We can check with Dipsikha what is.</v>
+
+00:24:16.110 --> 00:24:27.300
+<v Andrew J>It's because you cannot access to OGRDS and so the the problem the here the point is please reach out to her and try to understand where he's her struction coming from.</v>
+
+00:24:29.690 --> 00:24:32.600
+<v Andrew J>Because here there are two scenarios.</v>
+
+00:24:32.610 --> 00:24:42.250
+<v Andrew J>The first one is that she's right and the the information in the instruction is not the right one, basically because there are several.</v>
+
+00:24:42.680 --> 00:24:47.170
+<v Andrew J>There are a lot of products without prod description without some values.</v>
+
+00:24:47.270 --> 00:24:51.100
+<v Andrew J>OK, that can happen, but it sound a little bit strange to me.</v>
+
+00:24:52.180 --> 00:24:57.970
+<v Andrew J>So then the second scenario is that the struction is not is wrong destruction that sees using is wrong.</v>
+
+00:24:58.040 --> 00:25:01.170
+<v Andrew J>For better, I'm not sure. OK.</v>
+
+00:25:00.620 --> 00:25:12.630
+<v Alan Ross>There are incomplete because he was working also checking the subcategory and segment part and in Mercury in the US part there is a structure that it's automatically done by other team or something like that.</v>
+
+00:25:13.310 --> 00:25:13.980
+<v Andrew J>It's ugly.</v>
+
+00:25:13.540 --> 00:25:16.680
+<v Alan Ross>So what we should understand it OK the that the point.</v>
+
+00:25:13.990 --> 00:25:28.650
+<v Andrew J>So yeah, so well, now here at this point I'm not looking for the root control Baso, but what I want to understand, and this is the request to you by Salian beer, please reach out to her and try to understand.</v>
+
+00:25:29.490 --> 00:25:30.740
+<v Andrew J>Ohm.</v>
+
+00:25:32.270 --> 00:25:51.220
+<v Andrew J>Yeah, the source of that destruction and try to compare with our struction, this is the if we already have instruction for Canada, the paper struction for Canada maybe see can start using let's say our instruction because maybe in our instruction the information is right or maybe not.</v>
+
+00:25:53.730 --> 00:25:53.920
+<v Andrew J>No.</v>
+
+00:25:51.210 --> 00:25:54.160
+<v Alan Ross>Yes, or analyze the the code and content today.</v>
+
+00:25:54.890 --> 00:25:57.190
+<v Andrew J>So yeah, because now it's seen.</v>
+
+00:25:57.200 --> 00:26:04.320
+<v Andrew J>That seems kind of stuck in this point because the data is not there in the structure or the data is is.</v>
+
+00:26:04.330 --> 00:26:10.250
+<v Andrew J>Is is incorrect, so maybe in our instruction is good or good enough.</v>
+
+00:26:10.370 --> 00:26:12.910
+<v Andrew J>I will say OK, so just please reach out.</v>
+
+00:26:12.920 --> 00:26:22.540
+<v Andrew J>I'm going to open a chat all together just to align and then maybe you can have a quick call with her in order to figure out the subtly what is happening and what instructions he's using. OK.</v>
+
+00:26:23.890 --> 00:26:24.170
+<v Elena Drew>OK.</v>
+
+00:26:25.300 --> 00:26:25.710
+<v Andrew J>Yep.</v>
+
+00:26:25.860 --> 00:26:26.140
+<v Andrew J>Thank you.</v>
+
+00:26:31.600 --> 00:26:31.960
+<v Jesus Rujas>OK.</v>
+
+00:26:31.970 --> 00:26:34.970
+<v Jesus Rujas>Things like Holy Luis that you continue.</v>
+
+00:26:39.190 --> 00:26:39.710
+<v Jimmy Johnson>OK.</v>
+
+00:26:42.330 --> 00:26:51.750
+<v Jimmy Johnson>Yesterday I was working with draw from the rubber thing on shamburg in the in the Toolbox Library.</v>
+
+00:26:53.180 --> 00:27:23.460
+<v Jimmy Johnson>If we still have to solve the problem with the time zones when searching drawers in the metric table they like we can they have a restriction in not go to the the problem and I EI tried to resolve hey on the other hand I continue working on a finish implementation of the generated by line for for for the companies.</v>
+
+00:27:24.430 --> 00:27:30.640
+<v Jimmy Johnson>So far I have the first three steps working for omnisales.</v>
+
+00:27:33.590 --> 00:27:34.360
+<v Jimmy Johnson>Umm.</v>
+
+00:27:35.270 --> 00:27:38.290
+<v Jimmy Johnson>I have a some meetings.</v>
+
+00:27:40.460 --> 00:27:41.690
+<v Jimmy Johnson>I think we should.</v>
+
+00:27:41.750 --> 00:27:43.590
+<v Jimmy Johnson>We should all for my part.</v>
+
+00:27:46.500 --> 00:27:46.990
+<v Andrew J>Hmm.</v>
+
+00:27:46.990 --> 00:27:47.170
+<v Andrew J>OK.</v>
+
+00:27:47.180 --> 00:27:47.820
+<v Andrew J>Thank you Luis.</v>
+
+00:27:47.870 --> 00:27:53.200
+<v Andrew J>Anyway, as you probably notice in your calendar there is a meeting today in order to follow up.</v>
+
+00:27:53.870 --> 00:28:00.820
+<v Andrew J>Some of the points that you are working on, so maybe we can discuss deeper in that meeting, OK.</v>
+
+00:28:01.640 --> 00:28:01.770
+<v Jimmy Johnson>No.</v>
+
+00:28:01.780 --> 00:28:02.380
+<v Jimmy Johnson>OK, perfect.</v>
+
+00:28:03.230 --> 00:28:03.400
+<v Andrew J>Yeah.</v>
+
+00:28:03.410 --> 00:28:03.710
+<v Andrew J>Thank you.</v>
+
+00:28:04.420 --> 00:28:04.750
+<v Jimmy Johnson>Thank you.</v>
+
+00:28:05.720 --> 00:28:09.000
+<v Jesus Rujas>I think you, Luis and Carter, can you date please?</v>
+
+00:28:12.440 --> 00:28:13.090
+<v Karthik RR>I. Jesus.</v>
+
+00:28:13.100 --> 00:28:47.900
+<v Karthik RR>Hello so yesterday we did the Redis rollover testing with the TGB as Max memory limit and what we have identified is like after 13 GB the master to when we we need to do a failover a slave to master promotion is happening but at the same time it takes too much time to send that data that is about 30 minutes and then again if a failover happens I this radius is not able to uh promote the master.</v>
+
+00:28:47.910 --> 00:28:54.930
+<v Karthik RR>I came back so and also our cabinet is cluster is sending a terminate signal to the Redis cluster so.</v>
+
+00:28:58.350 --> 00:28:58.850
+<v Karthik RR>So that's the.</v>
+
+00:28:58.900 --> 00:28:59.410
+<v Karthik RR>Me.</v>
+
+00:28:59.550 --> 00:29:01.390
+<v Karthik RR>Ohh uh.</v>
+
+00:29:01.430 --> 00:29:01.820
+<v Karthik RR>We have.</v>
+
+00:29:01.830 --> 00:29:08.780
+<v Karthik RR>Uh, that's we have noticed yesterday and we are still still finding out a way to avoid this issue.</v>
+
+00:29:09.720 --> 00:29:13.430
+<v Karthik RR>Ohh uh for pretty swallow?</v>
+
+00:29:14.370 --> 00:29:14.530
+<v Karthik RR>Yep.</v>
+
+00:29:17.840 --> 00:29:18.040
+<v Andrew J>OK.</v>
+
+00:29:16.170 --> 00:29:35.310
+<v Karthik RR>And also regarding this uh reducing the logs yesterday we checked with CHARLINK and Gemma and and ask the team to remove the warning logs and today we are going to work on the SVC logs.</v>
+
+00:29:35.480 --> 00:29:35.960
+<v Karthik RR>Yeah.</v>
+
+00:29:36.840 --> 00:29:38.830
+<v Karthik RR>As well as continuing on Redis Hector.</v>
+
+00:29:42.370 --> 00:29:42.530
+<v Andrew J>OK.</v>
+
+00:29:44.680 --> 00:29:45.730
+<v Karthik RR>Yep, that's all problem.</v>
+
+00:29:50.560 --> 00:29:51.110
+<v Jesus Rujas>OK.</v>
+
+00:29:51.160 --> 00:29:52.130
+<v Jesus Rujas>Thanks, kartik.</v>
+
+00:29:52.170 --> 00:29:52.650
+<v Jesus Rujas>I'm Peter.</v>
+
+00:29:54.330 --> 00:29:55.200
+<v Jesus Rujas>Can you continue please?</v>
+
+00:29:56.010 --> 00:29:56.420
+<v Petar Radosevic>Mm-hmm.</v>
+
+00:29:56.430 --> 00:29:56.640
+<v Petar Radosevic>Sure.</v>
+
+00:29:57.580 --> 00:30:01.030
+<v Petar Radosevic>And so yesterday I was working in meeting summarization.</v>
+
+00:30:02.750 --> 00:30:03.670
+<v Petar Radosevic>Ohm.</v>
+
+00:30:04.150 --> 00:30:05.670
+<v Petar Radosevic>Yeah, I restructured the code.</v>
+
+00:30:06.470 --> 00:30:09.680
+<v Petar Radosevic>Uh, make some changes to make more flexible.</v>
+
+00:30:10.610 --> 00:30:17.320
+<v Petar Radosevic>Also, Marcos added some additional parameters to to UI.</v>
+
+00:30:17.360 --> 00:30:32.490
+<v Petar Radosevic>So now we can from UI choose from four different models we have available from GPT 3.5 to GPT 4 and we can also set the temperature from from UI.</v>
+
+00:30:33.930 --> 00:30:35.600
+<v Petar Radosevic>Uh umm.</v>
+
+00:30:35.940 --> 00:30:41.340
+<v Petar Radosevic>Also, yeah I I'm I'm working right now in a cleaning.</v>
+
+00:30:42.300 --> 00:30:43.090
+<v Petar Radosevic>Well, the input file.</v>
+
+00:30:44.250 --> 00:30:48.980
+<v Petar Radosevic>Uh, because there is a lot of garbage in there.</v>
+
+00:30:49.790 --> 00:30:50.080
+<v Petar Radosevic>Uh.</v>
+
+00:30:50.390 --> 00:30:54.360
+<v Petar Radosevic>Words like, umm, humm, etcetera.</v>
+
+00:30:54.420 --> 00:30:57.300
+<v Petar Radosevic>So yeah, all of that could be removed.</v>
+
+00:30:58.130 --> 00:31:06.670
+<v Petar Radosevic>Uh, also, when when, for example when when someone speaking and the other guy says OK or something like that?</v>
+
+00:31:08.140 --> 00:31:16.050
+<v Petar Radosevic>Uh, so basically it's intercept the the one who is speaking and introduce additional words that are unnecessary.</v>
+
+00:31:17.080 --> 00:31:17.300
+<v Andrew J>Umm.</v>
+
+00:31:16.060 --> 00:31:19.120
+<v Petar Radosevic>So my idea is to clean all of that.</v>
+
+00:31:20.160 --> 00:31:24.990
+<v Petar Radosevic>Yeah, but I I need to be careful because I can break something else.</v>
+
+00:31:30.650 --> 00:31:31.250
+<v Andrew J>Yeah, you're right.</v>
+
+00:31:25.000 --> 00:31:31.470
+<v Petar Radosevic>So it's a bit sensitive work and yeah, I also tested.</v>
+
+00:31:32.610 --> 00:31:39.900
+<v Petar Radosevic>Yeah, I I test the GPT 4 and it seems that it's giving a better results.</v>
+
+00:31:41.180 --> 00:31:43.320
+<v Petar Radosevic>I can share some files with you.</v>
+
+00:31:44.230 --> 00:31:47.930
+<v Petar Radosevic>Uh, I mean results from GPT 3.5 are OK.</v>
+
+00:31:50.730 --> 00:31:50.950
+<v Andrew J>Mm-hmm.</v>
+
+00:31:48.730 --> 00:31:52.360
+<v Petar Radosevic>Uh, you can conclude what's what's in the meeting.</v>
+
+00:31:52.370 --> 00:31:57.410
+<v Petar Radosevic>But I think GPT for ohh give us a actually a better results.</v>
+
+00:31:58.110 --> 00:31:59.370
+<v Petar Radosevic>Uh umm.</v>
+
+00:31:57.980 --> 00:32:00.460
+<v Andrew J>Umm, OK sounds good.</v>
+
+00:31:59.410 --> 00:32:13.300
+<v Petar Radosevic>So yeah, we need actually to make some comparison to see is it worth to to pay that much more for GPT 4 or we could stay with the GPT 3.5.</v>
+
+00:32:14.370 --> 00:32:14.630
+<v Andrew J>Hmm.</v>
+
+00:32:15.640 --> 00:32:16.200
+<v Andrew J>Yeah.</v>
+
+00:32:16.260 --> 00:32:16.480
+<v Andrew J>Yeah.</v>
+
+00:32:16.490 --> 00:32:17.930
+<v Andrew J>That that's yeah.</v>
+
+00:32:17.940 --> 00:32:34.500
+<v Andrew J>This is the maybe an analysis that we need to do, but what I will recommend at this point is to let's say to for testing and to for this kind of things to continue with the 3.5 version because it's cheaper.</v>
+
+00:32:33.760 --> 00:32:35.720
+<v Petar Radosevic>Mm-hmm. Yep.</v>
+
+00:32:36.200 --> 00:32:43.680
+<v Andrew J>But if there results are a little bit better in the DPT four, maybe we can use GPT 4 in the demo with Mohit.</v>
+
+00:32:44.900 --> 00:32:48.170
+<v Andrew J>Again, yes, the for that day, right?</v>
+
+00:32:45.570 --> 00:32:49.010
+<v Petar Radosevic>Uh, yeah, yeah, that's that's what makes sense, I think. Mm-hmm.</v>
+
+00:32:48.180 --> 00:32:51.770
+<v Andrew J>Just to provide him more more accurate results.</v>
+
+00:32:51.350 --> 00:32:52.700
+<v Petar Radosevic>Yes, yes, I agree.</v>
+
+00:32:52.160 --> 00:33:00.110
+<v Andrew J>OK, so but yeah, but for now I daily basis to complete everything that that is still pending.</v>
+
+00:33:00.120 --> 00:33:03.360
+<v Andrew J>Maybe you can continue using GPT 3.5.</v>
+
+00:33:04.280 --> 00:33:04.790
+<v Petar Radosevic>Hmm.</v>
+
+00:33:04.830 --> 00:33:05.540
+<v Petar Radosevic>OK.</v>
+
+00:33:05.890 --> 00:33:06.770
+<v Petar Radosevic>Yeah.</v>
+
+00:33:06.870 --> 00:33:12.620
+<v Petar Radosevic>I also had one more idea and that is after this automatic preprocessing.</v>
+
+00:33:19.200 --> 00:33:19.400
+<v Andrew J>Umm.</v>
+
+00:33:12.630 --> 00:33:31.010
+<v Petar Radosevic>The file I tried to send that processed file to GPT with the task to fix a errors that it can detect in transcription and then we and to return the file in the same format.</v>
+
+00:33:31.020 --> 00:33:35.430
+<v Petar Radosevic>Of course, as it's received and then to send that file to summarization.</v>
+
+00:33:35.450 --> 00:33:38.840
+<v Andrew J>Umm yeah, that's that's a good idea, yeah.</v>
+
+00:33:37.210 --> 00:33:46.270
+<v Petar Radosevic>But yeah, but The thing is that that first step is is a bit slow, so it takes.</v>
+
+00:33:46.280 --> 00:33:46.710
+<v Petar Radosevic>I don't know.</v>
+
+00:33:51.390 --> 00:33:51.670
+<v Andrew J>No.</v>
+
+00:33:46.720 --> 00:33:54.080
+<v Petar Radosevic>Let's say a minute maybe to to check the file and to fix errors, but definitely the returns are a little bit better file.</v>
+
+00:33:54.810 --> 00:33:56.540
+<v Andrew J>Umm OK.</v>
+
+00:33:56.300 --> 00:33:58.620
+<v Petar Radosevic>Uh, so yeah, there are a couple of ideas.</v>
+
+00:34:02.680 --> 00:34:04.120
+<v Andrew J>Umm OK.</v>
+
+00:33:58.630 --> 00:34:04.660
+<v Petar Radosevic>So I just need to follow them up and to see what was the best option.</v>
+
+00:34:06.510 --> 00:34:06.910
+<v Andrew J>OK.</v>
+
+00:34:07.050 --> 00:34:07.260
+<v Andrew J>That.</v>
+
+00:34:07.270 --> 00:34:07.620
+<v Andrew J>That's good.</v>
+
+00:34:08.780 --> 00:34:14.820
+<v Andrew J>Maybe that would be these, let's say these cleaniness step probably can be optional.</v>
+
+00:34:15.870 --> 00:34:18.820
+<v Andrew J>Umm, because I'm.</v>
+
+00:34:18.870 --> 00:34:30.390
+<v Andrew J>I'm afraid that if this step will take one or two minutes, maybe that will not work for them of purposes I'm talking about, right? So.</v>
+
+00:34:27.770 --> 00:34:32.920
+<v Petar Radosevic>Definitely yes, yes, and it will have additional costs.</v>
+
+00:34:33.640 --> 00:34:36.450
+<v Andrew J>No, by the way, it's it's good to have at least this step.</v>
+
+00:34:48.050 --> 00:34:48.330
+<v Petar Radosevic>Umm.</v>
+
+00:34:36.460 --> 00:34:48.710
+<v Andrew J>Maybe we can use a maybe in in production if finally this scenario we move this scenario to production, maybe makes sense to to wait a couple of minutes or maybe not.</v>
+
+00:34:48.760 --> 00:34:55.520
+<v Andrew J>I mean the this kind of requirements and and yeah this kind of requirements are not clear yet.</v>
+
+00:34:55.650 --> 00:34:57.370
+<v Andrew J>Yeah, OK.</v>
+
+00:34:57.420 --> 00:34:57.650
+<v Petar Radosevic>Yep.</v>
+
+00:34:59.930 --> 00:35:00.140
+<v Andrew J>Yeah.</v>
+
+00:35:00.150 --> 00:35:00.630
+<v Andrew J>So that's good.</v>
+
+00:35:01.760 --> 00:35:02.510
+<v Petar Radosevic>Yeah, and that's all.</v>
+
+00:35:05.710 --> 00:35:06.210
+<v Jesus Rujas>OK.</v>
+
+00:35:06.220 --> 00:35:06.690
+<v Jesus Rujas>Thanks Peter.</v>
+
+00:35:07.910 --> 00:35:08.130
+<v Petar Radosevic>You know.</v>
+
+00:35:08.060 --> 00:35:08.850
+<v Jesus Rujas>My dates.</v>
+
+00:35:10.100 --> 00:35:11.660
+<v Jesus Rujas>Uh, yesterday I was.</v>
+
+00:35:11.760 --> 00:35:23.070
+<v Jesus Rujas>Working on fixing a Boolean ability on on sirval prediction and doing some tests just to be sure that it was working and then ask Marcos explain.</v>
+
+00:35:23.080 --> 00:35:30.320
+<v Jesus Rujas>I was also working on the support for the Sirval team and with the issues they where reporting us.</v>
+
+00:35:32.640 --> 00:35:35.310
+<v Jesus Rujas>On or so I'm.</v>
+
+00:35:35.520 --> 00:35:39.210
+<v Jesus Rujas>I'm taking uh because the Basant team.</v>
+
+00:35:39.260 --> 00:35:48.070
+<v Jesus Rujas>Uh have planned to deploy another three microservices on pre production with the fish that will nobility sign.</v>
+
+00:35:48.080 --> 00:35:56.560
+<v Jesus Rujas>Checking the microservices installation because and there is an issue between the packets and the packets lock versions.</v>
+
+00:36:05.490 --> 00:36:05.690
+<v Andrew J>Umm.</v>
+
+00:35:56.570 --> 00:36:06.140
+<v Jesus Rujas>OK, so I'm fixing it so they can deploy on preproduction, so I'm also.</v>
+
+00:36:06.150 --> 00:36:13.260
+<v Jesus Rujas>I was checking I could spend so much time, but I was also checking the recommendation of the radio.</v>
+
+00:36:13.270 --> 00:36:18.050
+<v Jesus Rujas>So my idea is if I can continue with it today I I'm going to do it.</v>
+
+00:36:19.160 --> 00:36:19.340
+<v Andrew J>Umm.</v>
+
+00:36:19.740 --> 00:36:20.020
+<v Jesus Rujas>OK.</v>
+
+00:36:21.290 --> 00:36:24.550
+<v Jesus Rujas>And this is more or less my my updates.</v>
+
+00:36:29.900 --> 00:36:33.170
+<v Jesus Rujas>Uh, I think Jesus not joining.</v>
+
+00:36:33.180 --> 00:36:35.350
+<v Jesus Rujas>So I think we are all.</v>
+
+00:36:35.990 --> 00:36:42.000
+<v Jesus Rujas>So you don't have anything else or any comment we can we can close.</v>
+
+00:36:44.760 --> 00:36:45.960
+<v Petar Radosevic>Let's summarize this meeting.</v>
+
+00:36:47.380 --> 00:36:47.570
+<v Jesus Rujas>No.</v>
+
+00:36:47.530 --> 00:36:48.920
+<v Andrew J>Yeah, that's good.</v>
+
+00:36:49.150 --> 00:36:50.530
+<v Andrew J>Yeah, 24 minutes.</v>
+
+00:36:51.050 --> 00:36:53.700
+<v Andrew J>Uh, almost 25 minutes.</v>
+
+00:36:53.710 --> 00:36:54.500
+<v Andrew J>Is is good.</v>
+
+00:36:54.630 --> 00:37:01.110
+<v Andrew J>OK, so Dev please run this there now I I am a little bit curious.</v>
+
+00:37:01.940 --> 00:37:03.150
+<v Petar Radosevic>Yeah, I will.</v>
+
+00:37:03.160 --> 00:37:03.460
+<v Petar Radosevic>I will.</v>
+
+00:37:01.120 --> 00:37:06.380
+<v Andrew J>Please run run the the process and share with us the share with us the summarization, and let's see.</v>
+
+00:37:08.430 --> 00:37:09.400
+<v Andrew J>Let's see the results.</v>
+
+00:37:09.460 --> 00:37:10.230
+<v Andrew J>OK, that's good.</v>
+
+00:37:10.340 --> 00:37:11.980
+<v Petar Radosevic>Yep, OK.</v>
+
+00:37:11.830 --> 00:37:13.140
+<v Andrew J>OK guys, then thank you.</v>
+
+00:37:13.150 --> 00:37:14.040
+<v Andrew J>I thank you so much.</v>
+
+00:37:13.920 --> 00:37:14.160
+<v Jesus Rujas>OK.</v>
+
+00:37:14.130 --> 00:37:14.960
+<v Andrew J>Uh, good. Catch up.</v>
+
+00:37:14.970 --> 00:37:15.420
+<v Andrew J>Thank you.</v>
+
+00:37:15.470 --> 00:37:16.100
+<v Andrew J>See you later.</v>
+
+00:37:16.140 --> 00:37:16.750
+<v Jesus Rujas>Thank you.</v>
+
+00:37:16.880 --> 00:37:17.210
+<v Jesus Rujas>Bye.</v>
+
+00:37:16.230 --> 00:37:17.330
+<v Andrew J>Bye. Bye bye.</v>
+
+00:37:16.940 --> 00:37:17.450
+<v Alan Ross>Thank you. Bye.</v>
+
+00:37:17.300 --> 00:37:17.750
+<v Petar Radosevic>Thank you.</v>
+
+00:37:17.340 --> 00:37:17.760
+<v Caroline Raducanu>Thank you.</v>
+
+00:37:17.760 --> 00:37:17.960
+<v Petar Radosevic>Bye bye.</v>
+
+00:37:17.100 --> 00:37:18.010
+<v Marcos Alonso>Thank you. Bye.</v>
+
+00:37:17.770 --> 00:37:18.360
+<v Caroline Raducanu>I'll see you later.</v>
+
+00:37:18.620 --> 00:37:19.840
+<v Elena Drew>Everyone. Bye.</v>
