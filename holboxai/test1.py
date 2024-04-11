@@ -7,6 +7,7 @@ from name_entity_recognition import NameEntityRecognition
 from text2image import text2image
 from summarizer import Summarizer
 from relevant_docs import RelevantDocs
+from meeting_summarizer import MeetingSummarizer
 
 # ## S3 files Reader 
 
@@ -98,3 +99,9 @@ from relevant_docs import RelevantDocs
 # response = ner.get_entity("Harry and jay are going for a party in dubai, after that they will visit paris.", "amazon.titan-text-express-v1")
 # print(response)
 
+
+
+## Meeting Summarizer
+# ms = MeetingSummarizer()
+# response = ms.get_meeting_summary("aniket-instance-summarization", "meeting_summary.txt")
+# print(response)
